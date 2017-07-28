@@ -1,0 +1,239 @@
+$caixa-baixa: "Lato Light", "Roboto Light","Arial", sans-serif!important;
+$caixa-alta:"Lato Light", "Roboto Light", "Arial", sans-serif!important;
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: $caixa-baixa;
+  font-weight:  300;
+  vertical-align: baseline;
+}
+body{
+  margin-bottom: 0!important;
+}
+main:last-child{
+  margin-bottom: 0!important;
+}
+@media only screen and (min-width: 0) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 13.5px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+.text-white{
+  color: #ffffff;
+  p{
+    color: #ffffff;
+  }
+  h1{
+    color: #ffffff;
+  }
+}
+.row-conteiner{
+  height: 100%;
+}
+.center-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+.center-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+/******* SCROLL BARR *******/
+body::-webkit-scrollbar-track {
+  background-color: #F4F4F4;
+}
+body::-webkit-scrollbar {
+  width: 6px;
+  background: #F4F4F4;
+
+}
+body::-webkit-scrollbar-thumb {
+  background: #e16835;
+  -moz-appearance: inherit !important;
+}
+.default-botao-card{
+  width: 100px;
+  height: 20px;
+  padding: 10px 20px;
+  position: relative;
+  margin-top: 20px;
+  background-color: #f66201;
+  border: 1.5px solid #f66201;
+  font-weight: 400;
+  transition: all .1s;
+  &:hover{
+    background-color: transparent;
+    cursor: pointer;
+    //color: #e16835;
+  }
+}
+
+/****** BOTAO ANIMADO DAS SESSOES *******/
+.ancora-link-next {
+  bottom: 10%;
+}
+.ancora-link-topo {
+  bottom: -16px;
+}
+.ancora-link{
+  z-index: 97;
+  left: 50%;
+  width: 12em;
+  //background-color: #1b2d4a;
+  height: 35px;
+  position: absolute;
+  transition: all .6s;
+
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 0 -6em;
+  &:hover {
+    cursor: pointer;
+  }
+  &:hover .botao:before{
+    transition: all .6s;
+    transform: rotate(135deg) scale(1.2, 1.2)!important;
+
+  }
+  &:hover .botao:after{
+    transition: all .6s;
+    transform: scaleX(1.1)!important;
+  }
+}
+.img-arrow-next {
+  background-image: url("../imagens/arrow-down-vz.png");
+}
+.img-arrow-topo {
+  //background-image: url("../imagens/arrow-topo.png");
+}
+.arrow {
+  animation-name: arrow-down;
+  animation: arrow-down 3s linear infinite, tempo 4s infinite;
+  -moz-animation: arrow-down 3s linear infinite, tempo 4s infinite;
+  -webkit-animation: arrow-down 3s linear infinite, tempo 4s infinite;
+  z-index: 999;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: .8em;
+  height: 0.6em;
+  margin-left: -.4em;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+.botao{
+  z-index: 98;
+  transition: all .6s;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1em;
+  height: 0.6em;
+  display: block;
+  margin: -0.1em 0 0 -0.5em;
+}
+.botao::before {
+  transition: all .6s;
+  display: block;
+  content: '';
+  width: 2.5em;
+  height: 2.5em;
+  position: absolute;
+  left: 50%;
+  margin: 0 0 0 -1.25em;
+  background-color: #ffffff;
+  bottom: -.75em;
+  transform: rotate(-45deg);
+}
+.botao::after{
+  transition: all .6s;
+  display: block;
+  content: '';
+  position: absolute;
+  background-color: #ffffff;
+  left: 50%;
+  margin: 0 0 0 -6em;
+  width: 12em;
+  height: .2em;
+  //transform: rotate(45deg)!important;
+}
+.default-hover-white:hover{
+  background-color: #ffffff;
+}
+      /**** keyframe animação do botao *****/
+
+      @keyframes arrow-down {
+        from,to{
+          -webkit-transform: translateY(0px);
+          -moz-transform: translateY(0px);
+          -ms-transform: translateY(0px);
+          transform: translateY(0px);
+        }
+        5% {
+          transform: translateY(-13px);
+          -webkit-transform: translateY(-13px);
+          -moz-transform: translateY(-13px);
+          -ms-transform: translateY(-13px);
+        }
+        15%{
+          -webkit-transform: translateY(-3px);
+          -moz-transform: translateY(-3px);
+          -ms-transform: translateY(-3px);
+          transform: translateY(-3px);
+
+        }
+        25%{
+          -webkit-transform: translateY(-9px);
+          -moz-transform: translateY(-9px);
+          -ms-transform: translateY(-9px);
+          transform: translateY(-9px);
+        }
+        35%{
+          -webkit-transform: translateY(-3px);
+          -moz-transform: translateY(-3px);
+          -ms-transform: translateY(-3px);
+          transform: translateY(-3px);
+        }
+        45%{
+          -webkit-transform: translateY(-7px);
+          -moz-transform: translateY(-7px);
+          -ms-transform: translateY(-7px);
+          transform: translateY(-7px);
+        }
+        55%{
+          -webkit-transform: translateY(-3px);
+          -moz-transform: translateY(-3px);
+          -ms-transform: translateY(-3px);
+          transform: translateY(-3px);
+        }
+
+        65%{
+          -webkit-transform: translateY(0px);
+          -moz-transform: translateY(0px);
+          -ms-transform: translateY(0px);
+          transform: translateY(0px);
+        }
+      }

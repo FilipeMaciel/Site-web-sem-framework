@@ -1,0 +1,7 @@
+@media screen and (max-width: 764px) {
+  .servico-topicos p {
+    margin: 10px 0;
+    font-size: 1.2em;
+    font-weight: 400; } }
+
+/*# sourceMappingURL=mediaQueries.css.map */

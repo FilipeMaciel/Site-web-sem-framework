@@ -1,0 +1,242 @@
+@charset "UTF-8";
+.servico-quem-somos {
+  width: 100%;
+  height: 90vh;
+  background-image: linear-gradient(#002545, #e7e7e7);
+  position: relative;
+  flex-direction: row; }
+
+.servico-quem-somos-card {
+  height: 40vh;
+  text-align: center;
+  border: solid 1px rgba(196, 196, 196, 0.89); }
+
+.servico-section-divisor {
+  background-color: #e7e7e7;
+  margin-bottom: 0 !important; }
+
+.servico-traco-divisor {
+  height: 4px;
+  background-color: #002545; }
+
+/***Financiamentos***/
+.financiamento {
+  width: 100%;
+  height: 80vh;
+  background-color: #e7e7e7;
+  position: relative; }
+
+.servico-title-conteiner {
+  height: 15vh; }
+
+.servico-title {
+  text-align: center; }
+
+.servico-finan-traco {
+  margin-top: 20px;
+  width: 150px;
+  height: 5px;
+  background-color: #ffffff; }
+
+.servico-card-slide {
+  height: 55vh; }
+
+.servico-finan-card {
+  background-color: #002545;
+  height: 100%; }
+
+.servico-finan-card-conteudo {
+  padding: 30px;
+  height: 100%; }
+
+.servico-topicos {
+  margin: 4vh; }
+  .servico-topicos p {
+    margin: 20px 0;
+    font-size: 1.4em;
+    font-weight: 300; }
+
+.servico-finan-botoes-slide {
+  height: 30px;
+  margin-top: 12.5%; }
+  .servico-finan-botoes-slide span {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    border: 1px solid #ffffff;
+    margin: 0 5px; }
+    .servico-finan-botoes-slide span:hover {
+      cursor: pointer;
+      background-color: #ffffff;
+      transition: all .1s; }
+
+.servico-finan-image-conteiner {
+  width: 100%;
+  height: 100%; }
+
+.servico-finan-imagem {
+  background-image: url("../imagens/minha-casa-minha-vida-img.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 300px; }
+
+/******** Seguros de vida ********/
+.servico-seguro {
+  height: 55vh; }
+
+.servico-conteiner-card {
+  height: 100%; }
+
+.servico-card {
+  height: 40vh;
+  background-color: rgba(4, 42, 84, 0.7); }
+
+.servico-emprestico-card {
+  height: 50vh;
+  background-color: rgba(4, 42, 84, 0.7); }
+
+.servico-seguro-traco {
+  margin-top: 20px;
+  width: 150px;
+  height: 5px;
+  background-color: #07e0f7; }
+
+.servico-seguro-card-conteudo {
+  padding: 30px; }
+
+.servico-cont-imagem {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0; }
+
+.servico-seguro-imagem {
+  background-image: url("../imagens/seguro-de-vida.png"); }
+
+.servico-emprestimo-imagem {
+  background-image: url("../imagens/emprestimo-mulher.png"); }
+
+.servico-contas-imagem {
+  background-image: url("../imagens/homem-cartao-caixa.png"); }
+
+.servico-imagem {
+  display: flex;
+  height: 90%;
+  position: absolute;
+  bottom: 0;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+/****** Emprestimo *****/
+.servico-section-blue, .servico-seguro, .servico-emprestimo {
+  background-image: linear-gradient(#002545, #0178f3);
+  position: relative; }
+
+.servico-emprestimo {
+  height: 60vh; }
+
+/******* Consorcio *******/
+.servico-consorcio {
+  height: 80vh;
+  width: 100%;
+  background-image: linear-gradient(#f66201 5%, #eeeeee); }
+
+.servico-titulo-consorcio {
+  height: 15vh; }
+
+.servico-consorcio-title {
+  text-align: center; }
+
+.servico-consorcio-conteiner-card {
+  height: 100%; }
+
+.servico-consorcio-card {
+  height: 60vh;
+  background-color: rgba(246, 98, 1, 0.7); }
+
+.servico-consorcio-card-conteudo {
+  padding: 30px;
+  height: 100%; }
+
+/**** Espa├ºo branco *****/
+.servico-espaco-sessao {
+  width: 100%;
+  height: 25vh;
+  background-color: #eeeeee; }
+
+/********** Contato ********/
+.servico-contato {
+  position: relative;
+  height: 90vh;
+  background-color: #eeeeee; }
+
+.servico-titulo-contato {
+  height: 15vh; }
+  .servico-titulo-contato p {
+    text-align: center;
+    font-weight: 400; }
+
+.servico-contato-conteiner-cards {
+  height: 55vh; }
+
+.servico-contato-cards {
+  position: relative;
+  background-color: #ffffff;
+  height: 100%;
+  margin-right: 5px;
+  transition: all .2s; }
+
+.servico-contato-card-conteudo {
+  padding: 20px;
+  height: 100%; }
+
+.servico-contato-traco {
+  margin-top: 20px;
+  width: 100px;
+  height: 5px; }
+
+.servico-contato-topicos {
+  margin-top: 5vh; }
+  .servico-contato-topicos p {
+    margin: 20px 0;
+    font-size: 1.2em;
+    font-weight: 400; }
+
+.servico-contato-topicos > div:last-child {
+  margin-top: 10vh; }
+
+.servico-contato-fale-conosco:hover {
+  background-color: #002d54;
+  cursor: pointer; }
+  .servico-contato-fale-conosco:hover h1 {
+    color: #ffffff; }
+  .servico-contato-fale-conosco:hover p {
+    color: #ffffff; }
+  .servico-contato-fale-conosco:hover .servico-contato-traco {
+    background-color: #ffffff; }
+
+.servico-contato-financiamento:hover {
+  background-color: #f66201;
+  cursor: pointer; }
+  .servico-contato-financiamento:hover h1 {
+    color: #ffffff; }
+  .servico-contato-financiamento:hover p {
+    color: #ffffff; }
+  .servico-contato-financiamento:hover .servico-contato-traco {
+    background-color: #ffffff; }
+
+.servico-contato-footer-card {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 10vh; }
+
+.servico-contato-footer {
+  height: 10vh; }
+  .servico-contato-footer p {
+    text-align: center;
+    font-weight: 400; }
+
+/*# sourceMappingURL=servicos.css.map */

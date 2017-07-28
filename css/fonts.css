@@ -1,0 +1,45 @@
+.font-title-max h1 {
+  font-size: 2.8em; }
+
+.font-title-card {
+  font-size: 2.3em; }
+
+.font-bold {
+  font-weight: 600; }
+
+.font-text-white {
+  color: #000; }
+  .font-text-white p {
+    color: #ffffff; }
+  .font-text-white h1 {
+    color: #ffffff; }
+
+.font-text-cinza {
+  color: #7f7f7f; }
+  .font-text-cinza p {
+    color: #7f7f7f; }
+  .font-text-cinza h1 {
+    color: #7f7f7f; }
+
+.font-text-azul {
+  color: #002d54; }
+  .font-text-azul p {
+    color: #002d54; }
+  .font-text-azul h1 {
+    color: #002d54; }
+
+.font-text-laranja {
+  color: #f66201; }
+  .font-text-laranja p {
+    color: #f66201; }
+  .font-text-laranja h1 {
+    color: #f66201; }
+
+.font-text-azul-claro {
+  color: #07e0f7; }
+  .font-text-azul-claro p {
+    color: #07e0f7; }
+  .font-text-azul-claro h1 {
+    color: #07e0f7; }
+
+/*# sourceMappingURL=fonts.css.map */
