@@ -80,6 +80,9 @@ header{
 }
 .text-header{
   text-align: center;
+  width: 100%;
+  height: 100%;
+
 }
 .center-center{
   display: flex;
@@ -92,14 +95,12 @@ header{
   background-image: url("../imagens/header-img-1.jpg");
 }
 .img-header2{
-  background-image: url("../imagens/residencial.jpg");
-}
-.img-header3{
   background-image: url("../imagens/minha-casa-minha-vida.jpg");
 }
-.mySlides {
-  display: flex;;
+.img-header3{
+  background-image: url("../imagens/residencial.jpg");
 }
+.mySlides {display:none}
 .arrow-left, .arrow-right, .badge {
   cursor: pointer;
   color: #ffffff;
@@ -111,6 +112,7 @@ header{
   top: -100px;
   width: 20px;
   font-size: 40px;
+  z-index: 999;
 }
 .arrow-right{
   position: absolute;
@@ -137,6 +139,10 @@ header{
   padding: 2px;
   text-align: center;
 }
+.badge:hover{
+ background-color: #ffffff;
+  transition: all .1s;
+}
 .header-conteiner-botoes {
   position: absolute;
   bottom: 35%;
@@ -152,4 +158,103 @@ header{
 }
 .white{
   background-color: #ffffff;
+}
+
+.carrosel-header{
+
+}
+.header-image-conteiner{
+  //position: fixed;
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.prox{
+  position: absolute;
+  left: 100px;
+  top: 200px;
+}
+.prev{
+  position: absolute;
+  left: 0;
+  top: 200px;
+}
+
+
+
+/************ SlideShow Header ************/
+.mySlides {display:none}
+
+/* Slideshow container */
+
+.active, .dot:hover {
+  background-color: #ffffff;
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }

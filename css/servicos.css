@@ -59,16 +59,6 @@
 .servico-finan-botoes-slide {
   height: 30px;
   margin-top: 12.5%; }
-  .servico-finan-botoes-slide span {
-    width: 15px;
-    height: 15px;
-    border-radius: 15px;
-    border: 1px solid #ffffff;
-    margin: 0 5px; }
-    .servico-finan-botoes-slide span:hover {
-      cursor: pointer;
-      background-color: #ffffff;
-      transition: all .1s; }
 
 .servico-finan-image-conteiner {
   width: 100%;
