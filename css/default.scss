@@ -86,7 +86,12 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-
+.default-background-blue{
+  background-color: #002545;
+}
+.default-background-orange{
+  background-color: #f66201;
+}
 .default-traco-branco::after {
   content: '';
   display: block;

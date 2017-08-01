@@ -42,12 +42,12 @@
 .servico-card-slide {
   height: 55vh; }
 
-.servico-finan-card {
+.servico-slider-card {
   position: relative;
-  background-color: #002545;
+  display: block;
   height: 100%; }
 
-.servico-finan-card-conteudo {
+.servico-slider-card-conteudo {
   padding: 30px;
   height: 100%; }
 
@@ -61,7 +61,7 @@
 .finan-card {
   display: none; }
 
-.servico-finan-botoes-slide {
+.servico-card-slider-botoes {
   position: absolute;
   left: 0;
   bottom: 10%;
@@ -69,18 +69,18 @@
   width: 100%;
   margin-top: 0; }
 
-.servico-finan-image-conteiner {
+.servico-slider-image-card {
   width: 100%;
   height: 100%; }
 
-.servico-finan-conteiner {
+.servico-slider-card-conteiner-img {
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: bottom;
   width: 100%;
   height: 300px; }
 
-.servico-finan-conteiner::after {
+.servico-slider-card-conteiner-img::after {
   content: '';
   width: 100%;
   height: 2px;
@@ -195,22 +195,26 @@
 
 .servico-consorcio-card-conteudo {
   padding: 30px;
-  height: 100%; }
+  height: 100%;
+  position: relative; }
 
-.servico-finan-conteiner {
+.servico-slider-card-conteiner-img {
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: bottom;
   width: 100%;
   height: 300px; }
 
-.servico-finan-conteiner::after {
+.servico-slider-card-conteiner-img::after {
   content: '';
   width: 100%;
   height: 2px;
-  background-color: #002545;
+  background-color: #f66201;
   display: block;
   margin: 300px auto; }
+
+.servico-consor-img1 {
+  background-image: url("../imagens/consorcio-imovel.png"); }
 
 /**** Espa├ºo branco *****/
 .servico-espaco-sessao {
@@ -222,7 +226,8 @@
 .servico-contato {
   position: relative;
   height: 90vh;
-  background-color: #eeeeee; }
+  background-color: #eeeeee;
+  display: block; }
 
 .servico-titulo-contato {
   height: 15vh; }
