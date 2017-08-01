@@ -25,7 +25,7 @@
     <nav class="cabecalho row">
         <a class="logo col offset-l1"></a>
         <div class="conteiner-menu col l5 offset-l6">
-            <ul class="menu-desk">
+            <ul class="menu-desk font-bold">
                 <li>HOME</li>
                 <li>QUEM SOMOS</li>
                 <li>SERVIÇOS</li>
@@ -34,6 +34,8 @@
             </ul>
         </div>
     </nav>
+
+    <!-- Header -->
     <header class="center-center font-text-white">
 
         <div class="header-conteiner">
@@ -59,14 +61,11 @@
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
             <div class="header-conteiner-botoes center-row">
-                <span class="badge" onclick="currentSlide(1)"></span>
-                <span class="badge" onclick="currentSlide(2)"></span>
-                <span class="badge" onclick="currentSlide(3)"></span>
-                <span class="badge" onclick="playPause()"></span>
+                <span class="badge badge-header" onclick="currentSlide(1)"></span>
+                <span class="badge badge-header" onclick="currentSlide(2)"></span>
+                <span class="badge badge-header" onclick="currentSlide(3)"></span>
             </div>
         </div>
-
-
 
         <h1 class="header-caixa-aqui"></h1>
 
@@ -84,22 +83,25 @@
         </div>
         <div class="servico-quem-somos-card-conteiner row">
             <div class="servico-quem-somos-card center-center col l6 offset-l3 servico-topicos text-white">
-                <p class="">A nossa empresa foi fundada em agosto de 2014 e possui como <br>
+                <p class="">A <span class="font-bold">Vizzar Consultoria</span> foi fundada em agosto de 2014 e possui como <br>
                     principal objetivo facilitar os trâmites entre os nossos clientes <br>
-                    e os serviços da Caixa Economica Federal. </p>
+                    e os serviços da <span class="font-bold">Caixa Economica Federal</span>. </p>
                 <p>
                     Facilitar a realização dos sonhos dos nossos clientes é a nossa <br>
                     maior satisfação!</p>
+                
+                <div class="servico-quem-somos-header center-center">
+                    <div class="servico-quem-somos-img"></div>
+                </div>
             </div>
         </div>
     </section>
 
-    
-    <!-- Divisor de sessão -->
+    <!-- Divisor de sessão
         <div class="servico-section-divisor row">
             <div class="servico-traco-divisor col l4 offset-l4"></div>
         </div>
-
+    -->
 
     <!-- Financiamento -->
     <section class="financiamento">
@@ -108,27 +110,60 @@
         </div>
         <div class="servico-card-slide row">
             <div class="servico-finan-card col offset-l1 offset-s1 offset-m1 s10 m6 l6 text-white">
-                <div class="servico-finan-card-conteudo finan-card-1">
+
+                <!-- Minha casa minha vida -->
+                <div class="servico-finan-card-conteudo finan-card">
                     <h1 class="font-title-card">Minha Casa <span class="font-bold">Minha Vida</span></h1>
-                    <div class="servico-finan-traco"></div>
                     <div class="servico-topicos">
                         <p>Realize o seu sonho da casa própria.</p>
                         <p>Parcelas que cabem no seu bolso.</p>
                         <p>Financiamento em até 360 meses.</p>
                     </div>
-                    <div class="servico-finan-botoes-slide center-row">
-                        <span class="badge"></span>
-                        <span class="badge"></span>
-                        <span class="badge"></span>
-                        <span class="badge"></span>
-                        <span class="badge"></span>
-                        <span class="badge"></span>
+                </div>
+
+                <!-- Reforma e Ampliação -->
+                <div class="servico-finan-card-conteudo finan-card">
+                    <h1 class="font-title-card"><span class="font-bold">Reforma </span> e Ampliação</h1>
+                    <div class="servico-topicos">
+                        <p>Reforme ou amplie seu imóvel.</p>
+                        <p>Menores taxas de juros do mercado.</p>
+                        <p>Financiamento em até 360 meses.</p>
                     </div>
                 </div>
 
+                <!-- Aquisição de Terreno e Construção -->
+                <div class="servico-finan-card-conteudo finan-card">
+                    <h1 class="font-title-card">Aquisição de <span class="font-bold"> Terreno e Construção</span></h1>
+                    <div class="servico-topicos">
+                        <p>Reforme ou amplie seu imóvel.</p>
+                        <p>Menores taxas de juros do mercado.</p>
+                        <p>Financiamento em até 360 meses.</p>
+                    </div>
+                </div>
+
+                <!-- Construção em Terreno Próprio -->
+                <div class="servico-finan-card-conteudo finan-card">
+                    <h1 class="font-title-card">Construa em seu <span class="font-bold"> Próprio Terreno</span></h1>
+                    <div class="servico-topicos">
+                        <p>Construa como quiser e tenha até 30 anos para pagar.</p>
+                        <p>Menores taxas de juros do mercado.</p>
+                        <p>Financiamento em até 360 meses.</p>
+                    </div>
+                </div>
+                <div class="servico-finan-botoes-slide center-row">
+                    <span class="badge badge-finan" onclick="currentSlideFinan(1)"></span>
+                    <span class="badge badge-finan" onclick="currentSlideFinan(2)"></span>
+                    <span class="badge badge-finan" onclick="currentSlideFinan(3)"></span>
+                    <span class="badge badge-finan" onclick="currentSlideFinan(4)"></span>
+
+                </div>
             </div>
+
             <div class="servico-finan-image-conteiner col l3 offset-l1 center-center">
-                <div class="servico-finan-imagem"></div>
+                <div class="servico-finan-conteiner servico-finan-img1 "></div>
+                <div class="servico-finan-conteiner servico-finan-img2 "></div>
+                <div class="servico-finan-conteiner servico-finan-img3 "></div>
+                <div class="servico-finan-conteiner servico-finan-img2 "></div>
             </div>
         </div>
     </section>
@@ -146,7 +181,6 @@
                 <div class="servico-card col l11">
                     <div class="servico-seguro-card-conteudo">
                         <h1 class="font-title-card">Seguro de <span class="font-bold font-text-azul-claro">Vida</span></h1>
-                        <div class="servico-seguro-traco"></div>
                         <div class="servico-topicos">
                             <p>Seguro Amparo. </p>
                             <p>Seguro Vida da Gente.</p>
@@ -164,7 +198,6 @@
                 <div class="servico-emprestico-card col l11">
                     <div class="servico-seguro-card-conteudo">
                         <h1 class="font-title-card">Empréstimo <span class="font-bold font-text-azul-claro">Pessoal</span></h1>
-                        <div class="servico-seguro-traco"></div>
                         <div class="servico-topicos">
                             <p>Crédito Direto Caixa (CDC).</p>
                             <p>Empréstimo Consignado (Aposentados, <br>
@@ -190,7 +223,6 @@
                 <div class="servico-card col l11">
                     <div class="servico-seguro-card-conteudo">
                         <h1 class="font-title-card">Abertura de <span class="font-bold font-text-azul-claro">Contas</span></h1>
-                        <div class="servico-seguro-traco"></div>
                         <div class="servico-topicos">
                             <p>Conta Corrente.</p>
                             <p>Conta Poupança.</p>
@@ -217,7 +249,6 @@
                 <div class="servico-consorcio-card col l12">
                     <div class="servico-consorcio-card-conteudo">
                         <h1 class="font-title-card">Consórcio de <span class="font-bold">Imóveis</span></h1>
-                        <div class="servico-finan-traco"></div>
                         <div class="servico-topicos">
                             <p>Comprar um imóvel residencial ou comercial.
                             </p>
@@ -230,7 +261,25 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="servico-finan-botoes-slide center-row">
+                    <span class="badge badge-finan" onclick="currentSlideFinan(1)"></span>
+                    <span class="badge badge-finan" onclick="currentSlideFinan(2)"></span>
+                    <span class="badge badge-finan" onclick="currentSlideFinan(3)"></span>
+                    <span class="badge badge-finan" onclick="currentSlideFinan(4)"></span>
+
+                </div>
+
             </div>
+
+            <div class="servico-finan-image-conteiner col l3 offset-l1 center-center">
+                <div class="servico-finan-conteiner servico-finan-img1 "></div>
+                <div class="servico-finan-conteiner servico-finan-img2 "></div>
+                <div class="servico-finan-conteiner servico-finan-img3 "></div>
+                <div class="servico-finan-conteiner servico-finan-img2 "></div>
+            </div>
+
+
         </div>
     </section>
 
@@ -286,52 +335,51 @@
 </main>
 <!-- Script Slide Header -->
 <script>
-    var slideIndex = 0;
+    var slideIndexHeader = 0;
     var pause = false;
 
-    showSlides(slideIndex+1);
+    showSlides(slideIndexHeader+1);
 
 
     function playPause(){
         if(pause == true){
             pause = false;
-        }else if(pause == false){
+        }else {
             pause = true;
         }
     }
     function plusSlides(n){
         pause = true;
-        mudaSlides(slideIndex += n);
+        mudaSlides(slideIndexHeader += n);
     }
 
     function currentSlide(n){
         pause = true;
-        mudaSlides(slideIndex = n);
+        mudaSlides(slideIndexHeader = n);
     }
     function showSlides(){
         if(!pause) {
             var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("badge");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
+            var slidesHeader = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("badge-header");
+            for (i = 0; i < slidesHeader.length; i++) {
+                slidesHeader[i].style.display = "none";
             }
-            slideIndex++;
+            slideIndexHeader++;
 
             //Verifica o final do slide e faz retornar ao começo
-            if (slideIndex > slides.length) {
-                slideIndex = 1
+            if (slideIndexHeader > slidesHeader.length) {
+                slideIndexHeader = 1
             }
-            if (slideIndex < 1) {
-                slideIndex = slides.length
+            if (slideIndexHeader < 1) {
+                slideIndexHeader = slidesHeader.length
             }
             //Remove todas as classes active
             for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" active", "");
             }
-            console.log(slides);
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
+            slidesHeader[slideIndexHeader - 1].style.display = "block";
+            dots[slideIndexHeader - 1].className += " active";
 
             //window.clearTimeout(3000);
         }
@@ -340,19 +388,99 @@
 
     function mudaSlides(n) {
         var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("badge");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
+        var slidesHeader = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("badge-header");
+        if (n > slidesHeader.length) {slideIndexHeader = 1}
+        if (n < 1) {slideIndexHeader = slidesHeader.length}
+        for (i = 0; i < slidesHeader.length; i++) {
+            slidesHeader[i].style.display = "none";
         }
         for (i = 0; i < dots.length; i++) {
             dots[i].className = dots[i].className.replace(" active", "");
         }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
+        slidesHeader[slideIndexHeader-1].style.display = "block";
+        dots[slideIndexHeader-1].className += " active";
     }
+
+
+    /**********Financiamento************/
+
+    var slideIndexFinan = 0;
+    var pauseSlideFinan = false;
+
+    slideFinan(slideIndexFinan+1);
+
+
+    function playPause(){
+        if(pauseSlideFinan == true){
+            pauseSlideFinan = false;
+        }else if(pauseSlideFinan == false){
+            pauseSlideFinan = true;
+        }
+    }
+    function currentSlideFinan(n){
+        pauseSlideFinan = true;
+        mudaSlidesFinan(slideIndexFinan = n);
+    }
+    function slideFinan(){
+        if(!pauseSlideFinan) {
+            var i;
+            var slidesFinan = document.getElementsByClassName("finan-card");
+            var imagensFinan = document.getElementsByClassName("servico-finan-conteiner");
+            var dots = document.getElementsByClassName("badge-finan");
+            for (i = 0; i < slidesFinan.length; i++) {
+                slidesFinan[i].style.display = "none";
+                imagensFinan[i].style.display = "none";
+            }
+            slideIndexFinan++;
+
+            //Verifica o final do slide e faz retornar ao começo
+            if (slideIndexFinan > slidesFinan.length) {
+                slideIndexFinan = 1
+            }
+            if (slideIndexFinan < 1) {
+                slideIndexFinan = slidesFinan.length
+            }
+            //Remove todas as classes active
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slidesFinan[slideIndexFinan - 1].style.display = "block";
+            imagensFinan[slideIndexFinan - 1].style.display = "block";
+            dots[slideIndexFinan - 1].className += " active";
+
+            //window.clearTimeout(3000);
+        }
+        window.setTimeout(slideFinan, 4000); // Change image every 2 seconds
+    }
+
+    function mudaSlidesFinan(n) {
+        var i;
+        var slidesFinanDiv = document.getElementsByClassName("finan-card");
+        var imagensFinan = document.getElementsByClassName("servico-finan-conteiner");
+        var dots = document.getElementsByClassName("badge-finan");
+        if (n > slidesFinanDiv.length) {slideIndexFinan = 1}
+        if (n < 1) {slideIndexFinan = slidesFinanDiv.length}
+        for (i = 0; i < slidesFinanDiv.length; i++) {
+            slidesFinanDiv[i].style.display = "none";
+            imagensFinan[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slidesFinanDiv[slideIndexFinan - 1].style.display = "block";
+        imagensFinan[slideIndexFinan - 1].style.display = "block";
+        dots[slideIndexFinan-1].className += " active";
+    }
+
+
+
+
+</script>
+
+<!-- Slide Financiamentos -->
+<script>
+
 </script>
 </body>
 </html>

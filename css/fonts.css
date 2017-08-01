@@ -4,6 +4,14 @@
 .font-title-card {
   font-size: 2.3em; }
 
+.font-title-card::after {
+  content: '';
+  display: block;
+  width: 150px;
+  height: 4px;
+  background-color: #ffffff;
+  margin: 10px 0; }
+
 .font-bold {
   font-weight: 600; }
 

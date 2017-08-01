@@ -1,15 +1,16 @@
 @charset "UTF-8";
 .servico-quem-somos {
   width: 100%;
-  height: 90vh;
-  background-image: linear-gradient(#002545, #e7e7e7);
+  height: 75vh;
+  background-color: #002545;
   position: relative;
   flex-direction: row; }
 
 .servico-quem-somos-card {
   height: 40vh;
   text-align: center;
-  border: solid 1px rgba(196, 196, 196, 0.89); }
+  border: solid 1px rgba(196, 196, 196, 0.89);
+  position: relative; }
 
 .servico-section-divisor {
   background-color: #e7e7e7;
@@ -23,7 +24,7 @@
 .financiamento {
   width: 100%;
   height: 80vh;
-  background-color: #e7e7e7;
+  background-color: #f6f6f6;
   position: relative; }
 
 .servico-title-conteiner {
@@ -42,6 +43,7 @@
   height: 55vh; }
 
 .servico-finan-card {
+  position: relative;
   background-color: #002545;
   height: 100%; }
 
@@ -56,20 +58,66 @@
     font-size: 1.4em;
     font-weight: 300; }
 
+.finan-card {
+  display: none; }
+
 .servico-finan-botoes-slide {
+  position: absolute;
+  left: 0;
+  bottom: 10%;
   height: 30px;
-  margin-top: 12.5%; }
+  width: 100%;
+  margin-top: 0; }
 
 .servico-finan-image-conteiner {
   width: 100%;
   height: 100%; }
 
-.servico-finan-imagem {
-  background-image: url("../imagens/minha-casa-minha-vida-img.png");
+.servico-finan-conteiner {
   background-repeat: no-repeat;
   background-size: contain;
+  background-position-y: bottom;
   width: 100%;
   height: 300px; }
+
+.servico-finan-conteiner::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #002545;
+  display: block;
+  margin: 300px auto; }
+
+.servico-finan-img1 {
+  background-image: url("../imagens/familia-MCMV.png"); }
+
+.servico-finan-img2 {
+  background-image: url("../imagens/construcao-terreno-proprio.png"); }
+
+.servico-finan-img3 {
+  background-image: url("../imagens/aquisicao-terreno-construcao.png"); }
+
+.servico-quem-somos-header {
+  width: 90px;
+  height: 90px;
+  border-radius: 80px;
+  border: solid #ffffff 1px;
+  position: absolute;
+  bottom: -15%;
+  background-color: #ffffff;
+  transition: all .5s; }
+  .servico-quem-somos-header:hover {
+    cursor: pointer;
+    transform: rotate(360deg); }
+
+.servico-quem-somos-img {
+  background-image: url("../imagens/icon-logo.png");
+  background-repeat: no-repeat;
+  background-size: 70px;
+  background-position: center;
+  width: 90px;
+  height: 90px;
+  opacity: .85; }
 
 /******** Seguros de vida ********/
 .servico-seguro {
@@ -149,6 +197,21 @@
   padding: 30px;
   height: 100%; }
 
+.servico-finan-conteiner {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: bottom;
+  width: 100%;
+  height: 300px; }
+
+.servico-finan-conteiner::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #002545;
+  display: block;
+  margin: 300px auto; }
+
 /**** Espa├ºo branco *****/
 .servico-espaco-sessao {
   width: 100%;
@@ -205,6 +268,8 @@
     color: #ffffff; }
   .servico-contato-fale-conosco:hover .servico-contato-traco {
     background-color: #ffffff; }
+  .servico-contato-fale-conosco:hover .font-title-card::after {
+    background-color: #f66201; }
 
 .servico-contato-financiamento:hover {
   background-color: #f66201;
@@ -215,6 +280,8 @@
     color: #ffffff; }
   .servico-contato-financiamento:hover .servico-contato-traco {
     background-color: #ffffff; }
+  .servico-contato-financiamento:hover .font-title-card::after {
+    background-color: #f66201; }
 
 .servico-contato-footer-card {
   position: absolute;
