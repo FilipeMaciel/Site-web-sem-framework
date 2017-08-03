@@ -12,6 +12,38 @@
   border: solid 1px rgba(196, 196, 196, 0.89);
   position: relative; }
 
+.servico-quem-somos-content {
+  position: absolute;
+  left: 0;
+  bottom: -15%;
+  width: 100%;
+  height: auto; }
+
+.servico-quem-somos-header {
+  width: 90px;
+  height: 90px;
+  border-radius: 90px;
+  border: solid #ffffff 1px;
+  background-color: #ffffff;
+  transition: all .5s;
+  margin: 0 auto; }
+  .servico-quem-somos-header:hover {
+    cursor: pointer;
+    transform: rotate(360deg); }
+
+.servico-quem-somos-img {
+  background-image: url("../imagens/icon-logo.png");
+  background-repeat: no-repeat;
+  background-size: 70px;
+  background-position: center;
+  width: 90px;
+  height: 90px;
+  opacity: .85;
+  animation-name: treme-logo;
+  animation: treme-logo 4s linear infinite, tempo 4s infinite;
+  -moz-animation: treme-logo 4s linear infinite, tempo 4s infinite;
+  -webkit-animation: treme-logo 4s linear infinite, tempo 4s infinite; }
+
 .servico-section-divisor {
   background-color: #e7e7e7;
   margin-bottom: 0 !important; }
@@ -39,13 +71,11 @@
   height: 5px;
   background-color: #ffffff; }
 
-.servico-card-slide {
-  height: 55vh; }
-
 .servico-slider-card {
   position: relative;
   display: block;
-  height: 100%; }
+  max-height: 50vh !important;
+  min-height: 50vh !important; }
 
 .servico-slider-card-conteudo {
   padding: 30px;
@@ -54,7 +84,7 @@
 .servico-topicos {
   margin: 4vh; }
   .servico-topicos p {
-    margin: 20px 0;
+    margin: 10px 0;
     font-size: 1.4em;
     font-weight: 300; }
 
@@ -63,30 +93,23 @@
 
 .servico-card-slider-botoes {
   position: absolute;
-  left: 0;
-  bottom: 10%;
+  bottom: 0;
   height: 30px;
   width: 100%;
-  margin-top: 0; }
+  margin: 0 auto 25px; }
 
 .servico-slider-image-card {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  position: relative; }
 
 .servico-slider-card-conteiner-img {
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: bottom;
+  -moz-background-size: contain;
   width: 100%;
   height: 300px; }
-
-.servico-slider-card-conteiner-img::after {
-  content: '';
-  width: 100%;
-  height: 2px;
-  background-color: #002545;
-  display: block;
-  margin: 300px auto; }
 
 .servico-finan-img1 {
   background-image: url("../imagens/familia-MCMV.png"); }
@@ -97,31 +120,9 @@
 .servico-finan-img3 {
   background-image: url("../imagens/aquisicao-terreno-construcao.png"); }
 
-.servico-quem-somos-header {
-  width: 90px;
-  height: 90px;
-  border-radius: 80px;
-  border: solid #ffffff 1px;
-  position: absolute;
-  bottom: -15%;
-  background-color: #ffffff;
-  transition: all .5s; }
-  .servico-quem-somos-header:hover {
-    cursor: pointer;
-    transform: rotate(360deg); }
-
-.servico-quem-somos-img {
-  background-image: url("../imagens/icon-logo.png");
-  background-repeat: no-repeat;
-  background-size: 70px;
-  background-position: center;
-  width: 90px;
-  height: 90px;
-  opacity: .85; }
-
 /******** Seguros de vida ********/
 .servico-seguro {
-  height: 55vh; }
+  height: 60vh; }
 
 .servico-conteiner-card {
   height: 100%; }
@@ -131,7 +132,6 @@
   background-color: rgba(4, 42, 84, 0.7); }
 
 .servico-emprestico-card {
-  height: 50vh;
   background-color: rgba(4, 42, 84, 0.7); }
 
 .servico-seguro-traco {
@@ -141,7 +141,7 @@
   background-color: #07e0f7; }
 
 .servico-seguro-card-conteudo {
-  padding: 30px; }
+  padding: 30px 30px 40px; }
 
 .servico-cont-imagem {
   height: 100%;
@@ -178,7 +178,7 @@
 .servico-consorcio {
   height: 80vh;
   width: 100%;
-  background-image: linear-gradient(#f66201 5%, #eeeeee); }
+  background-color: #f6f6f6; }
 
 .servico-titulo-consorcio {
   height: 15vh; }
@@ -235,6 +235,18 @@
     text-align: center;
     font-weight: 400; }
 
+.servico-titulo-traco-blue::after {
+  content: '';
+  width: 150px;
+  height: 4px;
+  background-color: #002d54; }
+
+.servico-titulo-traco-laranja::after {
+  content: '';
+  width: 150px;
+  height: 4px;
+  background-color: #f66201; }
+
 .servico-contato-conteiner-cards {
   height: 55vh; }
 
@@ -248,11 +260,6 @@
 .servico-contato-card-conteudo {
   padding: 20px;
   height: 100%; }
-
-.servico-contato-traco {
-  margin-top: 20px;
-  width: 100px;
-  height: 5px; }
 
 .servico-contato-topicos {
   margin-top: 5vh; }
@@ -271,10 +278,10 @@
     color: #ffffff; }
   .servico-contato-fale-conosco:hover p {
     color: #ffffff; }
-  .servico-contato-fale-conosco:hover .servico-contato-traco {
+  .servico-contato-fale-conosco:hover .servico-titulo-traco-laranja::after {
     background-color: #ffffff; }
-  .servico-contato-fale-conosco:hover .font-title-card::after {
-    background-color: #f66201; }
+  .servico-contato-fale-conosco:hover .servico-titulo-traco-blue::after {
+    background-color: #ffffff; }
 
 .servico-contato-financiamento:hover {
   background-color: #f66201;
@@ -283,10 +290,6 @@
     color: #ffffff; }
   .servico-contato-financiamento:hover p {
     color: #ffffff; }
-  .servico-contato-financiamento:hover .servico-contato-traco {
-    background-color: #ffffff; }
-  .servico-contato-financiamento:hover .font-title-card::after {
-    background-color: #f66201; }
 
 .servico-contato-footer-card {
   position: absolute;
@@ -299,6 +302,6 @@
   height: 10vh; }
   .servico-contato-footer p {
     text-align: center;
-    font-weight: 400; }
+    font-weight: 600; }
 
 /*# sourceMappingURL=servicos.css.map */

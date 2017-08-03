@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Vizzar Consultoria</title>
@@ -16,31 +16,31 @@
     <meta name="keywords" content="Financiamento, Consórcio, Seguro amparo, Minha casa minha vida, Caixa Aqui!">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Filipe Maciel">
-    <script src="libs/jquery-3.1.0.js"></script>
-    <script src="libs/jquery-ui.js"></script>
 
 </head>
 <body>
 <main>
     <nav class="cabecalho row">
-        <a class="logo col offset-l1"></a>
+        <div class="content-logo center-center col offset-l1 l1">
+            <a class="logo"></a>
+        </div>
         <div class="conteiner-menu col l5 offset-l6">
             <ul class="menu-desk font-bold">
-                <li>HOME</li>
-                <li>QUEM SOMOS</li>
-                <li>SERVIÇOS</li>
-                <li>CONTATO</li>
-                <li>INFORMAÇÕES</li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#quem-somos">A NOSSA EMPRESA</a></li>
+                <li><a href="#servicos">SERVIÇOS</a></li>
+                <li><a href="#contato">CONTATO</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Header -->
-    <header class="center-center font-text-white">
+    <a name="home" class="scroll-header"></a>
+    <header class="center-center font-text-white anime-div-pai">
 
-        <div class="header-conteiner">
+        <div class="header-conteiner ">
 
-            <div class="mySlides fade header-img-conteiner img-header1 center-center ">
+            <div class="mySlides fade header-img-conteiner img-header1 center-center">
                 <div class="text-header font-title-max center-center">
                     <h1 class=" ">A CONSULTORIA CAIXA AQUI MAIS <br> <span class="font-bold">PRÓXIMA DE VOCÊ!</span></h1>
                 </div>
@@ -77,42 +77,42 @@
     </header>
 
     <!-- Quem Somos -->
-    <section class="servico-quem-somos">
-        <div class="row center-center servico-title-conteiner servico-titulo-empresa font-title-max text-white">
+    <a name="quem-somos" class="scroll-quem-somos"></a>
+    <section class="servico-quem-somos anime-div-pai">
+        <div class="row center-center servico-title-conteiner servico-titulo-empresa font-title-max text-white anime-left">
             <h1 class="servico-title col l12">A NOSSA <span class="font-bold">EMPRESA</span></h1>
         </div>
         <div class="servico-quem-somos-card-conteiner row">
-            <div class="servico-quem-somos-card center-center col l6 offset-l3 servico-topicos text-white">
+            <div class="servico-quem-somos-card center-center col l6 m6 offset-l3 offset-m3 servico-topicos text-white anime-right">
                 <p class="">A <span class="font-bold">Vizzar Consultoria</span> foi fundada em agosto de 2014 e possui como <br>
                     principal objetivo facilitar os trâmites entre os nossos clientes <br>
                     e os serviços da <span class="font-bold">Caixa Economica Federal</span>. </p>
                 <p>
                     Facilitar a realização dos sonhos dos nossos clientes é a nossa <br>
                     maior satisfação!</p>
-                
-                <div class="servico-quem-somos-header center-center">
-                    <div class="servico-quem-somos-img"></div>
+
+                <!-- -->
+                <div class="servico-quem-somos-content anime-left">
+                    <div class="servico-quem-somos-header center-center">
+                        <div class="servico-quem-somos-img"></div>
+                    </div>
                 </div>
+                <div class="servico-quemsomos-img"></div>
             </div>
         </div>
     </section>
 
-    <!-- Divisor de sessão
-        <div class="servico-section-divisor row">
-            <div class="servico-traco-divisor col l4 offset-l4"></div>
-        </div>
-    -->
-
     <!-- Financiamento -->
-    <section class="financiamento">
-        <div class=" font-text-azul row center-center servico-title-conteiner font-title-max">
-            <h1 class=" servico-title col l12">ADQUIRA O SEU IMÓVEL <span class="font-bold">NOVO OU USADO</span></h1>
+    <section class="financiamento anime-div-pai">
+        <a name="servicos" class="scroll-servicos"></a>
+        <div class=" font-text-azul row center-center servico-title-conteiner font-title-max anime-left">
+            <h1 class=" servico-title col l12"><span class="font-bold">FINANCIAMENTOS</span> CAIXA</h1>
         </div>
-        <div class="servico-card-slide row">
-            <div class="servico-slider-card default-background-blue col offset-l1 offset-s1 offset-m1 s10 m6 l6 text-white">
+        <div class="row">
+            <div class="servico-slider-card default-background-blue col offset-l1 offset-s1 offset-m1 s10 m6 l6 text-white anime-left">
 
                 <!-- Minha casa minha vida -->
-                <div class="servico-slider-card-conteudo finan-card">
+                <div class="servico-slider-card-conteudo finan-card ">
                     <h1 class="font-title-card">Minha Casa <span class="font-bold">Minha Vida</span></h1>
                     <div class="servico-topicos">
                         <p>Realize o seu sonho da casa própria.</p>
@@ -159,7 +159,7 @@
                 </div>
             </div>
 
-            <div class="servico-slider-image-card col l3 offset-l1 center-center">
+            <div class="servico-slider-image-card col l3 offset-l1 center-center anime-right">
                 <div class="servico-slider-card-conteiner-img servico-finan-img servico-finan-img1 "></div>
                 <div class="servico-slider-card-conteiner-img servico-finan-img servico-finan-img2 "></div>
                 <div class="servico-slider-card-conteiner-img servico-finan-img servico-finan-img3 "></div>
@@ -169,15 +169,15 @@
     </section>
 
     <!-- Seguro de vida -->
-    <section class="servico-seguro">
+    <section class="servico-seguro anime-div-pai">
         <div class="row row-conteiner">
-            <div class="servico-cont-imagem col l5 offset-l1">
+            <div class="servico-cont-imagem col l5 offset-l1 anime-left">
                 <h1 class="servico-seguro-imagem servico-imagem col l10 offset-l2">
 
                 </h1>
             </div>
 
-            <div class="servico-conteiner-card center-center col l5 offset-l6 text-white">
+            <div class="servico-conteiner-card center-center col l5 offset-l6 text-white anime-right">
                 <div class="servico-card col l11">
                     <div class="servico-seguro-card-conteudo">
                         <h1 class="font-title-card">Seguro de <span class="font-bold font-text-azul-claro">Vida</span></h1>
@@ -192,9 +192,9 @@
     </section>
 
     <!-- Empréstimo Pessoal -->
-    <section class="servico-emprestimo">
+    <section class="servico-emprestimo anime-div-pai">
         <div class="row row-conteiner">
-            <div class="servico-conteiner-card center-center col l5 offset-l1 text-white">
+            <div class="servico-conteiner-card center-center col l5 offset-l1 text-white anime-left">
                 <div class="servico-emprestico-card col l11">
                     <div class="servico-seguro-card-conteudo">
                         <h1 class="font-title-card">Empréstimo <span class="font-bold font-text-azul-claro">Pessoal</span></h1>
@@ -208,7 +208,7 @@
                     </div>
                 </div>
             </div>
-            <div class="servico-cont-imagem col l4 offset-l7">
+            <div class="servico-cont-imagem col l4 offset-l7 anime-right">
                 <h1 class="servico-emprestimo-imagem servico-imagem col l10 offset-l2">
 
                 </h1>
@@ -217,9 +217,9 @@
     </section>
 
     <!-- Abertura de Contas -->
-    <section class="servico-seguro">
+    <section class="servico-seguro anime-div-pai">
         <div class="row row-conteiner">
-            <div class="servico-conteiner-card center-center col l5 offset-l6 text-white">
+            <div class="servico-conteiner-card center-center col l5 offset-l6 text-white anime-right">
                 <div class="servico-card col l11">
                     <div class="servico-seguro-card-conteudo">
                         <h1 class="font-title-card">Abertura de <span class="font-bold font-text-azul-claro">Contas</span></h1>
@@ -231,7 +231,7 @@
                     </div>
                 </div>
             </div>
-            <div class="servico-cont-imagem col l4 offset-l1">
+            <div class="servico-cont-imagem col l4 offset-l1 anime-left">
                 <h1 class="servico-contas-imagem servico-imagem col l10 offset-l2">
 
                 </h1>
@@ -240,12 +240,12 @@
     </section>
 
     <!-- Consórcios Caixa -->
-    <section class="servico-consorcio">
-        <div class="servico-titulo-consorcio font-text-white row font-title-max center-center">
+    <section class="servico-consorcio anime-div-pai">
+        <div class="servico-titulo-consorcio font-text-laranja row font-title-max center-center anime-left">
             <h1 class=" servico-consorcio-title col l12"><span class="font-bold">CONSÓRCIOS </span> CAIXA</h1>
         </div>
         <div class="servico-card-slide row">
-            <div class="servico-slider-card default-background-orange col offset-l1 offset-s1 offset-m1 s10 m6 l6 text-white">
+            <div class="servico-slider-card default-background-orange col offset-l1 offset-s1 offset-m1 s10 m6 l6 text-white anime-left">
 
                 <!-- Consórcio de Imóveis -->
                 <div class="servico-consorcio-card-conteudo consorcio-card">
@@ -275,7 +275,7 @@
                 </div>
             </div>
 
-            <div class="servico-slider-image-card col l3 offset-l1 center-center">
+            <div class="servico-slider-image-card col l3 offset-l1 center-center anime-right">
                 <div class="servico-slider-card-conteiner-img servico-consor-img servico-consor-img1 "></div>
                 <div class="servico-slider-card-conteiner-img servico-consor-img servico-finan-img2 "></div>
             </div>
@@ -288,16 +288,16 @@
     </section>
     
     <!-- Contato -->
-    <section class="servico-contato">
-        <div class="servico-titulo-contato font-text-cinza row font-title-max center-center">
+    <section class="servico-contato anime-div-pai">
+        <a name="contato" class="scroll-contato"></a>
+        <div class="servico-titulo-contato font-text-cinza row font-title-max center-center anime-left">
             <h1 class=" servico-consorcio-title col l12">ENTRE EM <span class="font-bold">CONTATO</span></h1>
         </div>
-        <div class="row servico-contato-conteiner-cards">
+        <div class="row servico-contato-conteiner-cards anime-right">
 
             <div class="servico-contato-cards col offset-l2 offset-m1 offset-s1 l4 m5 s10 font-text-azul servico-contato-fale-conosco">
                 <div class="servico-contato-card-conteudo">
-                    <h1 class="font-title-card">FALE <span class="font-bold">CONOSCO</span></h1>
-                    <div class="servico-contato-traco bg-azul"></div>
+                    <h1 class="font-title-card servico-titulo-traco-blue">FALE <span class="font-bold">CONOSCO</span></h1>
                     <div class="servico-contato-topicos">
                         <p>Interessado em nossos serviços?</p>
                         <p>Reclamações ou sugestões?</p>
@@ -310,8 +310,7 @@
             </div>
             <div class="servico-contato-cards offset-s1 col m5 l4 s10 font-text-laranja servico-contato-financiamento">
                 <div class="servico-contato-card-conteudo">
-                    <h1 class="font-title-card">SIMULE O <span class="font-bold">SEU FINANCIAMENTO</span></h1>
-                    <div class="servico-contato-traco bg-laranja"></div>
+                    <h1 class="font-title-card servico-titulo-traco-laranja">SIMULE O <span class="font-bold">SEU FINANCIAMENTO</span></h1>
                     <div class="servico-contato-topicos">
                         <p>Saiba mais detalhes sobre prazos e condições.</p>
                         <p>Depois, entre em contato conosco e finalize o processo.</p>
@@ -322,7 +321,7 @@
                 </div>
             </div>
         </div>
-        <div class="servico-contato-footer font-text-cinza col s12  font-title-max center-center">
+        <div class="servico-contato-footer font-text-cinza col s12  font-title-max center-center anime-left">
             <p class="">Av. Transbrasiliana N 156 Uruaçu, Goiás <br>
                 CEP | 76400-000</p>
         </div>
@@ -330,81 +329,93 @@
 
     <section class="">
     </section>
-
+    <footer class="center-center">
+        <p>©2017 Vizzar Consultoria ® - Todos os direitos reservados. </p>
+    </footer>
 
 </main>
 <!-- Script Slide Header -->
+<script src="libs/jquery-3.1.0.js"></script>
+<script src="libs/jquery-ui.js"></script>
+<script src="js/slides.js"></script>
+<script src="js/animeScroll.js"></script>
 <script>
-    var slideIndexHeader = 0;
-    var pause = false;
+    /********* Slide Header ***********/
 
-    showSlides(slideIndexHeader+1);
+        var slideIndexHeader = 0;
+        var pause = false;
+
+        showSlides(slideIndexHeader + 1);
 
 
-    function playPause(){
-        if(pause == true){
-            pause = false;
-        }else {
-            pause = true;
+        function playPause() {
+            if (pause == true) {
+                pause = false;
+            } else {
+                pause = true;
+            }
         }
-    }
-    function plusSlides(n){
-        pause = true;
-        mudaSlides(slideIndexHeader += n);
-    }
 
-    function currentSlide(n){
-        pause = true;
-        mudaSlides(slideIndexHeader = n);
-    }
-    function showSlides(){
-        if(!pause) {
+        function plusSlides(n) {
+            pause = true;
+            mudaSlides(slideIndexHeader += n);
+        }
+
+        function currentSlide(n) {
+            pause = true;
+            mudaSlides(slideIndexHeader = n);
+        }
+
+        function showSlides() {
+            if (!pause) {
+                var i;
+                var slidesHeader = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("badge-header");
+                for (i = 0; i < slidesHeader.length; i++) {
+                    slidesHeader[i].style.display = "none";
+                }
+                slideIndexHeader++;
+
+                //Verifica o final do slide e faz retornar ao começo
+                if (slideIndexHeader > slidesHeader.length) {
+                    slideIndexHeader = 1
+                }
+                if (slideIndexHeader < 1) {
+                    slideIndexHeader = slidesHeader.length
+                }
+                //Remove todas as classes active
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slidesHeader[slideIndexHeader - 1].style.display = "block";
+                dots[slideIndexHeader - 1].className += " active";
+
+                //window.clearTimeout(3000);
+            }
+            window.setTimeout(showSlides, 7000); // Change image every 2 seconds
+        }
+
+        function mudaSlides(n) {
             var i;
             var slidesHeader = document.getElementsByClassName("mySlides");
             var dots = document.getElementsByClassName("badge-header");
+            if (n > slidesHeader.length) {
+                slideIndexHeader = 1
+            }
+            if (n < 1) {
+                slideIndexHeader = slidesHeader.length
+            }
             for (i = 0; i < slidesHeader.length; i++) {
                 slidesHeader[i].style.display = "none";
             }
-            slideIndexHeader++;
-
-            //Verifica o final do slide e faz retornar ao começo
-            if (slideIndexHeader > slidesHeader.length) {
-                slideIndexHeader = 1
-            }
-            if (slideIndexHeader < 1) {
-                slideIndexHeader = slidesHeader.length
-            }
-            //Remove todas as classes active
             for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" active", "");
             }
             slidesHeader[slideIndexHeader - 1].style.display = "block";
             dots[slideIndexHeader - 1].className += " active";
-
-            //window.clearTimeout(3000);
         }
-        window.setTimeout(showSlides, 7000); // Change image every 2 seconds
-    }
-
-    function mudaSlides(n) {
-        var i;
-        var slidesHeader = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("badge-header");
-        if (n > slidesHeader.length) {slideIndexHeader = 1}
-        if (n < 1) {slideIndexHeader = slidesHeader.length}
-        for (i = 0; i < slidesHeader.length; i++) {
-            slidesHeader[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slidesHeader[slideIndexHeader-1].style.display = "block";
-        dots[slideIndexHeader-1].className += " active";
-    }
-
 
     /**********Financiamento************/
-
     var slideIndexFinan = 0;
     var pauseSlideFinan = false;
 
@@ -451,7 +462,7 @@
 
             //window.clearTimeout(3000);
         }
-        window.setTimeout(slideFinan, 4000); // Change image every 2 seconds
+        window.setTimeout(slideFinan, 5000); // Change image every 2 seconds
     }
 
     function mudaSlidesFinan(n) {
@@ -472,8 +483,6 @@
         imagensFinan[slideIndexFinan - 1].style.display = "block";
         dots[slideIndexFinan-1].className += " active";
     }
-
-
 
 
     /********* Consórcio ***********/
@@ -538,7 +547,6 @@
         imagensConsor[slideIndexCons - 1].style.display = "block";
         dots[slideIndexCons-1].className += " active";
     }
-
 
 
 

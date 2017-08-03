@@ -3,9 +3,52 @@
     margin: 10px 0;
     font-size: 1.2em;
     font-weight: 400; } }
-/**** Small Desktop ***
-@media screen and (max-width: ) {
-  
-}*/
+/**** Small Desktop ****/
+@media screen and (max-width: 1428px) {
+  /**** QUEM SOMOS ****/
+  .servico-quem-somos-header {
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    background-color: #ffffff; }
+
+  .servico-quem-somos-img {
+    background-size: 60px;
+    width: 80px;
+    height: 80px;
+    opacity: .85; }
+
+  /**** CARD SLIDE ****/
+  .servico-card-slide {
+    height: 45vh; }
+
+  .financiamento {
+    height: 75vh; }
+
+  .servico-consorcio {
+    height: 70vh; }
+
+  /** SEGURO ***/
+  .servico-seguro {
+    height: 50vh; }
+
+  .servico-card {
+    height: 35vh;
+    background-color: rgba(4, 42, 84, 0.7); }
+
+  .servico-emprestimo {
+    height: 50vh; }
+
+  .servico-emprestico-card {
+    background-color: rgba(4, 42, 84, 0.7); }
+
+  .font-title-card {
+    font-size: 2.1em; }
+
+  .servico-topicos {
+    margin: 3vh; }
+    .servico-topicos p {
+      margin: 2vh 0;
+      font-size: 1.2em; } }
 
 /*# sourceMappingURL=mediaQueries.css.map */

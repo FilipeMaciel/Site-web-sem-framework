@@ -8,9 +8,24 @@ $caixa-alta:"Lato Light", "Roboto Light", "Arial", sans-serif!important;
   font-family: $caixa-baixa;
   font-weight:  300;
   vertical-align: baseline;
+  box-sizing: border-box;
+  text-decoration: none;
+  -moz-text-decoration-style: solid;
+
 }
+a:hover, a:visited, a:focus, a:active{
+  text-decoration: none;
+  color: inherit;
+  -moz-text-decoration-color: #002d54;
+}
+
 body{
   margin-bottom: 0!important;
+  -ms-overflow-x: hidden;
+}
+main{
+  overflow: hidden;
+
 }
 main:last-child{
   margin-bottom: 0!important;
@@ -146,9 +161,9 @@ body::-webkit-scrollbar-thumb {
 }
 .arrow {
   animation-name: arrow-down;
-  animation: arrow-down 3s linear infinite, tempo 4s infinite;
-  -moz-animation: arrow-down 3s linear infinite, tempo 4s infinite;
-  -webkit-animation: arrow-down 3s linear infinite, tempo 4s infinite;
+  animation: arrow-down 3s linear infinite, tempo 3s infinite;
+  -moz-animation: arrow-down 3s linear infinite, tempo 3s infinite;
+  -webkit-animation: arrow-down 3s linear infinite, tempo 3s infinite;
   z-index: 999;
   position: absolute;
   left: 50%;
@@ -254,3 +269,89 @@ body::-webkit-scrollbar-thumb {
           transform: translateY(0px);
         }
       }
+
+      footer{
+        width: 100%;
+        height: 70px;
+        background-color: #ffffff;
+        color: #002248;
+        p{
+          font-weight: 600;
+        }
+      }
+      footer::after, footer::before{
+        content: '';
+        display: table;
+      }
+      footer::after {
+        clear: both;
+      }
+
+@keyframes treme-logo {
+  from,to{
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  7% {
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+  20% {
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+
+  }
+  30% {
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+  40% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+}
+
+/***** SCROLL *****/
+
+.scroll-quem-somos{
+  position: absolute;
+  left: 0;
+  bottom: 8.5%;
+}
+.scroll-servicos{
+  position: absolute;
+  top: -12.5%;
+  left: 0;
+}
+.scroll-contato{
+  position: absolute;
+  top: -12.5%;
+  left: 0;
+}
+
+/***** ANIMAção no SCROLL *****/
+.anime-left{
+  opacity: 0;
+  transform: translate3d(-200px,0,0);
+  transition: .3s;
+}
+.anime-right{
+  opacity: 0;
+  transform: translate3d(200px,0,0);
+  transition: .3s;
+}
+.anime-reset{
+  opacity: 1;
+  transform: translate3d(0,0,0);
+}
