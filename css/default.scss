@@ -85,11 +85,25 @@ body::-webkit-scrollbar-thumb {
   -moz-appearance: inherit !important;
 }
 .default-botao-card{
-  width: 100px;
-  height: 20px;
   padding: 10px 20px;
-  position: relative;
+  position: absolute;
+  bottom: 30px;
   margin-top: 20px;
+  background-color: #f66201;
+  border: 1.5px solid #f66201;
+  font-weight: 500;
+  transition: all .1s;
+  &:hover{
+    background-color: transparent;
+    cursor: pointer;
+    //color: #e16835;
+  }
+}
+.default-botao-saiba-mais {
+  padding: 7px 20px;
+  position: absolute!important;
+  left: 30px;
+  bottom: 20px;
   background-color: #f66201;
   border: 1.5px solid #f66201;
   font-weight: 400;
@@ -323,21 +337,30 @@ body::-webkit-scrollbar-thumb {
 }
 
 /***** SCROLL *****/
-
-.scroll-quem-somos{
+.scroll-position{
   position: absolute;
   left: 0;
+}
+.scroll-quem-somos{
+  @extend .scroll-position;
   bottom: 8.5%;
 }
+//Scroll para Consorcio e financiamento
 .scroll-servicos{
-  position: absolute;
+  @extend .scroll-position;
   top: -12.5%;
-  left: 0;
+}
+.scroll-consignado{
+  @extend .scroll-position;
+  top: -15.5%;
+}
+.scroll-emprestimo-pessoal{
+  @extend .scroll-position;
+  top: -15.5%;
 }
 .scroll-contato{
-  position: absolute;
+  @extend .scroll-position;
   top: -12.5%;
-  left: 0;
 }
 
 /***** ANIMAção no SCROLL *****/

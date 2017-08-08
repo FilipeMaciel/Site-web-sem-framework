@@ -1,4 +1,7 @@
 @charset "UTF-8";
+.servico-conteiner {
+  height: 100%; }
+
 .servico-quem-somos {
   width: 100%;
   height: 75vh;
@@ -76,16 +79,21 @@
   display: block;
   max-height: 50vh !important;
   min-height: 50vh !important; }
+  .servico-slider-card .default-botao-saiba-mais {
+    bottom: 15%;
+    left: 40px; }
 
 .servico-slider-card-conteudo {
-  padding: 30px;
+  padding: 20px 30px 30px 30px;
   height: 100%; }
 
 .servico-topicos {
-  margin: 4vh; }
+  margin: 3vh 4vh; }
   .servico-topicos p {
-    margin: 10px 0;
-    font-size: 1.4em;
+    line-height: 1.1;
+    line-break: auto;
+    padding: 5px;
+    font-size: 1.3em;
     font-weight: 300; }
 
 .finan-card {
@@ -125,23 +133,21 @@
   height: 60vh; }
 
 .servico-conteiner-card {
+  position: relative;
   height: 100%; }
 
 .servico-card {
-  height: 40vh;
+  position: relative;
+  min-height: 300px !important;
   background-color: rgba(4, 42, 84, 0.7); }
 
-.servico-emprestico-card {
+.servico-emprestimo-card {
   background-color: rgba(4, 42, 84, 0.7); }
-
-.servico-seguro-traco {
-  margin-top: 20px;
-  width: 150px;
-  height: 5px;
-  background-color: #07e0f7; }
 
 .servico-seguro-card-conteudo {
-  padding: 30px 30px 40px; }
+  padding: 20px 30px 40px;
+  min-height: 300px;
+  position: relative; }
 
 .servico-cont-imagem {
   height: 100%;
@@ -154,6 +160,9 @@
 
 .servico-emprestimo-imagem {
   background-image: url("../imagens/emprestimo-mulher.png"); }
+
+.servico-consignado-imagem {
+  background-image: url("../imagens/emprestimo-consignado.png"); }
 
 .servico-contas-imagem {
   background-image: url("../imagens/homem-cartao-caixa.png"); }
@@ -172,13 +181,21 @@
   position: relative; }
 
 .servico-emprestimo {
-  height: 60vh; }
+  height: 60vh;
+  position: relative; }
 
 /******* Consorcio *******/
 .servico-consorcio {
+  position: relative;
   height: 80vh;
   width: 100%;
   background-color: #f6f6f6; }
+  .servico-consorcio .default-botao-saiba-mais {
+    background-color: #002d54;
+    color: #ffffff;
+    border: 1.5px solid #002d54; }
+    .servico-consorcio .default-botao-saiba-mais:hover {
+      background-color: #f66201; }
 
 .servico-titulo-consorcio {
   height: 15vh; }
@@ -193,11 +210,6 @@
   height: 60vh;
   background-color: rgba(246, 98, 1, 0.7); }
 
-.servico-consorcio-card-conteudo {
-  padding: 30px;
-  height: 100%;
-  position: relative; }
-
 .servico-slider-card-conteiner-img {
   background-repeat: no-repeat;
   background-size: contain;
@@ -210,11 +222,14 @@
   width: 100%;
   height: 2px;
   background-color: #f66201;
-  display: block;
-  margin: 300px auto; }
+  margin: 300px auto;
+  display: block; }
 
 .servico-consor-img1 {
   background-image: url("../imagens/consorcio-imovel.png"); }
+
+.servico-consor-img2 {
+  background-image: url("../imagens/consorcio-auto.png"); }
 
 /**** Espa├ºo branco *****/
 .servico-espaco-sessao {
@@ -303,5 +318,15 @@
   .servico-contato-footer p {
     text-align: center;
     font-weight: 600; }
+
+/****** Formul├írios e modal *******/
+.servicos-formulario {
+  /* width: 100%;
+   height: 100%;
+   position: absolute;
+   background-color: rgba(0,0,0,.5);
+   top: 0;
+   left: 0;
+   z-index: 99;*/ }
 
 /*# sourceMappingURL=servicos.css.map */

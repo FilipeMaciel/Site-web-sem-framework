@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <title>Vizzar Consultoria</title>
@@ -9,26 +9,46 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/servicos.css">
-    <link rel="stylesheet" href="css/mediaQueries.css">
+    <link rel="stylesheet" href="css/desktop.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="css/cores.css">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta name="description" content="Representante caixa aqui!">
-    <meta name="keywords" content="Financiamento, Consórcio, Seguro amparo, Minha casa minha vida, Caixa Aqui!">
+    <meta name="keywords" content="caixa economica federal, caixa, caixa economica, financiamento, financiamento caixa, consórcio, consorcio caixa, seguro amparo, Minha casa minha vida, Caixa Aqui!">
+    <meta name="google-site-verification" content="6G6zlJ4EKwg7SzxuMKoPY0wXKJFzSrPmXCz2zfNmZZ8" />
     <meta name="robots" content="index, follow">
     <meta name="author" content="Filipe Maciel">
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+        ga('create', 'UA-104097231-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
 </head>
 <body>
 <main>
     <nav class="cabecalho row">
         <div class="content-logo center-center col offset-l1 l1">
-            <a class="logo"></a>
+            <a href="#home" class="logo"></a>
         </div>
-        <div class="conteiner-menu col l5 offset-l6">
+        <div class="conteiner-menu col l5 offset-l5">
             <ul class="menu-desk font-bold">
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#quem-somos">A NOSSA EMPRESA</a></li>
-                <li><a href="#servicos">SERVIÇOS</a></li>
+                <li><a href="#servicos">SERVIÇOS</a>
+                    <ul>
+                        <li><a href="#servicos">FINANCIAMENTO</a></li>
+                        <li><a href="#consignado">CONSIGNADO</a></li>
+                        <li><a href="#emprestimo-pessoal">EMMPRÉSTIMO PESSOAL</a></li>
+                        <li><a href="#seguro-vida">SEGURO DE VIDA</a></li>
+                        <li><a href="#abertura-conta">ABERTURA DE CONTA</a></li>
+                        <li><a href="#consorcio">CONSÓRCIO</a></li>
+                    </ul>
+                </li>
                 <li><a href="#contato">CONTATO</a></li>
             </ul>
         </div>
@@ -119,6 +139,7 @@
                         <p>Parcelas que cabem no seu bolso.</p>
                         <p>Financiamento em até 360 meses.</p>
                     </div>
+                    <span class="default-botao-saiba-mais">Saiba Mais</span>
                 </div>
 
                 <!-- Reforma e Ampliação -->
@@ -129,6 +150,7 @@
                         <p>Menores taxas de juros do mercado.</p>
                         <p>Financiamento em até 360 meses.</p>
                     </div>
+                    <span class="default-botao-saiba-mais">Saiba Mais</span>
                 </div>
 
                 <!-- Aquisição de Terreno e Construção -->
@@ -139,6 +161,7 @@
                         <p>Menores taxas de juros do mercado.</p>
                         <p>Financiamento em até 360 meses.</p>
                     </div>
+                    <span class="default-botao-saiba-mais">Saiba Mais</span>
                 </div>
 
                 <!-- Construção em Terreno Próprio -->
@@ -149,12 +172,26 @@
                         <p>Menores taxas de juros do mercado.</p>
                         <p>Financiamento em até 360 meses.</p>
                     </div>
+                    <span class="default-botao-saiba-mais">Saiba Mais</span>
+                </div>
+
+                <!-- SBPE -->
+                <div class="servico-slider-card-conteudo finan-card">
+                    <h1 class="font-title-card">Carta de Crédito <span class="font-bold"> - SBPE</span></h1>
+                    <div class="servico-topicos">
+                        <p>Aquisição de Imóvel Usado Residencial e Comercial.</p>
+                        <p>Construção em Terreno Próprio Residencial e Comercial.</p>
+                        <p>Aquisição de Terreno e Construção Residencial e Comercial.</p>
+                        <p>Reforma e/ou Ampliação.</p>
+                    </div>
+                    <span class="default-botao-saiba-mais">Saiba Mais</span>
                 </div>
                 <div class="servico-card-slider-botoes center-row">
                     <span class="badge badge-finan" onclick="currentSlideFinan(1)"></span>
                     <span class="badge badge-finan" onclick="currentSlideFinan(2)"></span>
                     <span class="badge badge-finan" onclick="currentSlideFinan(3)"></span>
                     <span class="badge badge-finan" onclick="currentSlideFinan(4)"></span>
+                    <span class="badge badge-finan" onclick="currentSlideFinan(5)"></span>
 
                 </div>
             </div>
@@ -164,12 +201,68 @@
                 <div class="servico-slider-card-conteiner-img servico-finan-img servico-finan-img2 "></div>
                 <div class="servico-slider-card-conteiner-img servico-finan-img servico-finan-img3 "></div>
                 <div class="servico-slider-card-conteiner-img servico-finan-img servico-finan-img2 "></div>
+                <div class="servico-slider-card-conteiner-img servico-finan-img servico-finan-img2 "></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Empréstimo Consignado -->
+    <section class="servico-emprestimo anime-div-pai">
+        <a name="consignado" class="scroll-consignado"></a>
+        <div class="row row-conteiner">
+            <div class="servico-cont-imagem col xl4 m4 offset-x1 offset-m1 anime-left">
+                <h1 class="servico-consignado-imagem servico-imagem col l10 offset-l2">
+
+                </h1>
+            </div>
+            <div class="servico-conteiner-card center-center col offset-l6 l5 offset-m6 m5 offset-s1 s10 text-white anime-right">
+                <div class="servico-card col l11">
+                    <div class="servico-seguro-card-conteudo">
+                        <h1 class="font-title-card">Empréstimo <span class="font-bold font-text-azul-claro">Consignado</span></h1>
+                        <div class="servico-topicos">
+                            <p>Crédito Direto Caixa (CDC).</p>
+                            <p>Empréstimo Consignado (Aposentados, <br>
+                                pensionistas e servidores públicos).</p>
+                            <p>Simule seu consignado sem sair de casa.</p>
+
+                        </div>
+                        <span class="default-botao-card">Simule seu consignado</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Empréstimo Pessoal -->
+    <section class="servico-emprestimo anime-div-pai">
+        <a name="emprestimo-pessoal" class="scroll-emprestimo-pessoal"></a>
+        <div class="row row-conteiner">
+            <div class="servico-conteiner-card center-center col l5 offset-l1 text-white anime-left">
+                <div class="servico-card col l11">
+                    <div class="servico-seguro-card-conteudo">
+                        <h1 class="font-title-card">Empréstimo <span class="font-bold font-text-azul-claro">Pessoal</span></h1>
+                        <div class="servico-topicos">
+                            <p>Crédito Direto Caixa (CDC).</p>
+                            <p>Empréstimo Consignado (Aposentados,
+                                pensionistas e servidores públicos).</p>
+                            <p>Simule seu consignado sem sair de casa.</p>
+                        </div>
+                        <span class="default-botao-saiba-mais">Saiba Mais</span>
+                    </div>
+                </div>
+            </div>
+            <div class="servico-cont-imagem col l4 offset-l7 anime-right">
+                <h1 class="servico-emprestimo-imagem servico-imagem col l10 offset-l2">
+
+                </h1>
             </div>
         </div>
     </section>
 
     <!-- Seguro de vida -->
     <section class="servico-seguro anime-div-pai">
+        <a name="seguro-vida" class="scroll-emprestimo-pessoal"></a>
         <div class="row row-conteiner">
             <div class="servico-cont-imagem col l5 offset-l1 anime-left">
                 <h1 class="servico-seguro-imagem servico-imagem col l10 offset-l2">
@@ -185,41 +278,19 @@
                             <p>Seguro Amparo. </p>
                             <p>Seguro Vida da Gente.</p>
                         </div>
+                        <span class="default-botao-saiba-mais">Saiba Mais</span>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Empréstimo Pessoal -->
-    <section class="servico-emprestimo anime-div-pai">
-        <div class="row row-conteiner">
-            <div class="servico-conteiner-card center-center col l5 offset-l1 text-white anime-left">
-                <div class="servico-emprestico-card col l11">
-                    <div class="servico-seguro-card-conteudo">
-                        <h1 class="font-title-card">Empréstimo <span class="font-bold font-text-azul-claro">Pessoal</span></h1>
-                        <div class="servico-topicos">
-                            <p>Crédito Direto Caixa (CDC).</p>
-                            <p>Empréstimo Consignado (Aposentados, <br>
-                                pensionistas e servidores públicos).</p>
-                            <p>Simule seu consignado sem sair de casa.</p>
-                        </div>
-                        <span class="default-botao-card">Simule seu consignado</span>
-                    </div>
-                </div>
-            </div>
-            <div class="servico-cont-imagem col l4 offset-l7 anime-right">
-                <h1 class="servico-emprestimo-imagem servico-imagem col l10 offset-l2">
-
-                </h1>
             </div>
         </div>
     </section>
 
     <!-- Abertura de Contas -->
     <section class="servico-seguro anime-div-pai">
-        <div class="row row-conteiner">
-            <div class="servico-conteiner-card center-center col l5 offset-l6 text-white anime-right">
+        <a name="abertura-conta" class="scroll-emprestimo-pessoal"></a>
+        <div class="row servico-conteiner">
+
+            <div class="servico-conteiner-card center-center col l5 offset-l1 text-white anime-left">
                 <div class="servico-card col l11">
                     <div class="servico-seguro-card-conteudo">
                         <h1 class="font-title-card">Abertura de <span class="font-bold font-text-azul-claro">Contas</span></h1>
@@ -228,19 +299,23 @@
                             <p>Conta Poupança.</p>
                             <p>Cartões de Crédito.</p>
                         </div>
+                        <span class="default-botao-saiba-mais">Saiba Mais</span>
                     </div>
                 </div>
             </div>
-            <div class="servico-cont-imagem col l4 offset-l1 anime-left">
+
+            <div class="servico-cont-imagem col l5 offset-l7 anime-right">
                 <h1 class="servico-contas-imagem servico-imagem col l10 offset-l2">
 
                 </h1>
             </div>
+
         </div>
     </section>
 
     <!-- Consórcios Caixa -->
     <section class="servico-consorcio anime-div-pai">
+        <a name="consorcio" class="scroll-servicos"></a>
         <div class="servico-titulo-consorcio font-text-laranja row font-title-max center-center anime-left">
             <h1 class=" servico-consorcio-title col l12"><span class="font-bold">CONSÓRCIOS </span> CAIXA</h1>
         </div>
@@ -248,7 +323,7 @@
             <div class="servico-slider-card default-background-orange col offset-l1 offset-s1 offset-m1 s10 m6 l6 text-white anime-left">
 
                 <!-- Consórcio de Imóveis -->
-                <div class="servico-consorcio-card-conteudo consorcio-card">
+                <div class="servico-slider-card-conteudo consorcio-card">
                     <h1 class="font-title-card">Consórcio de <span class="font-bold">Imóveis</span></h1>
                     <div class="servico-topicos">
                         <p>Comprar um imóvel residencial ou comercial.
@@ -256,10 +331,11 @@
                         <p><span class="font-bold">Construa</span> sua casa, <span class="font-bold">reforme</span> ou compre um <span class="font-bold">terreno</span>.</p>
                         <p>Prazo de até 200 meses para pagar.</p>
                     </div>
+                    <span class="default-botao-saiba-mais">Saiba Mais</span>
                 </div>
 
                 <!-- Consórcio Auto -->
-                <div class="servico-consorcio-card-conteudo consorcio-card">
+                <div class="servico-slider-card-conteudo consorcio-card">
                     <h1 class="font-title-card">Consórcio <span class="font-bold">Auto</span></h1>
                     <div class="servico-topicos">
                         <p>Compre o seu automóvel com parcelas a partir de 426,06 mensais.</p>
@@ -267,6 +343,7 @@
                         <p>Quite ou antecipe suas parcelas.</p>
                         <p>Cobertura de seguro antes ou depois da contemplação.</p>
                     </div>
+                    <span class="default-botao-saiba-mais">Saiba Mais</span>
                 </div>
 
                 <div class="servico-card-slider-botoes center-row">
@@ -276,8 +353,8 @@
             </div>
 
             <div class="servico-slider-image-card col l3 offset-l1 center-center anime-right">
-                <div class="servico-slider-card-conteiner-img servico-consor-img servico-consor-img1 "></div>
-                <div class="servico-slider-card-conteiner-img servico-consor-img servico-finan-img2 "></div>
+                <div class="servico-slider-card-conteiner-img servico-consor-img servico-consor-img1"></div>
+                <div class="servico-slider-card-conteiner-img servico-consor-img servico-consor-img2"></div>
             </div>
         </div>
 
@@ -327,8 +404,14 @@
         </div>
     </section>
 
-    <section class="">
+
+    <!-- Formulários da página -->
+    <section class="servicos-formulario">
+
     </section>
+
+
+    <!-- Rodapé -->
     <footer class="center-center">
         <p>©2017 Vizzar Consultoria ® - Todos os direitos reservados. </p>
     </footer>

@@ -69,16 +69,28 @@ body::-webkit-scrollbar-thumb {
   -moz-appearance: inherit !important; }
 
 .default-botao-card {
-  width: 100px;
-  height: 20px;
   padding: 10px 20px;
-  position: relative;
+  position: absolute;
+  bottom: 30px;
   margin-top: 20px;
+  background-color: #f66201;
+  border: 1.5px solid #f66201;
+  font-weight: 500;
+  transition: all .1s; }
+  .default-botao-card:hover {
+    background-color: transparent;
+    cursor: pointer; }
+
+.default-botao-saiba-mais {
+  padding: 7px 20px;
+  position: absolute !important;
+  left: 30px;
+  bottom: 20px;
   background-color: #f66201;
   border: 1.5px solid #f66201;
   font-weight: 400;
   transition: all .1s; }
-  .default-botao-card:hover {
+  .default-botao-saiba-mais:hover {
     background-color: transparent;
     cursor: pointer; }
 
@@ -266,20 +278,24 @@ footer::after {
     -ms-transform: rotate(0deg);
     transform: rotate(0deg); } }
 /***** SCROLL *****/
-.scroll-quem-somos {
+.scroll-position, .scroll-quem-somos, .scroll-servicos, .scroll-consignado, .scroll-emprestimo-pessoal, .scroll-contato {
   position: absolute;
-  left: 0;
+  left: 0; }
+
+.scroll-quem-somos {
   bottom: 8.5%; }
 
 .scroll-servicos {
-  position: absolute;
-  top: -12.5%;
-  left: 0; }
+  top: -12.5%; }
+
+.scroll-consignado {
+  top: -15.5%; }
+
+.scroll-emprestimo-pessoal {
+  top: -15.5%; }
 
 .scroll-contato {
-  position: absolute;
-  top: -12.5%;
-  left: 0; }
+  top: -12.5%; }
 
 /***** ANIMA├º├úo no SCROLL *****/
 .anime-left {

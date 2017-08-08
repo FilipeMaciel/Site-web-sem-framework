@@ -33,8 +33,8 @@ function animeScroll() {
             $(this).find('.anime-left').addClass(animationClass);
             $(this).find('.anime-right').addClass(animationClass);
         }else{
-            $(this).find('.anime-left').removeClass(animationClass);
-            $(this).find('.anime-right').removeClass(animationClass);
+            /*$(this).find('.anime-left').removeClass(animationClass);
+            $(this).find('.anime-right').removeClass(animationClass);*/
         }
     });
 }

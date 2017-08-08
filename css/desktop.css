@@ -39,7 +39,7 @@
   .servico-emprestimo {
     height: 50vh; }
 
-  .servico-emprestico-card {
+  .servico-emprestimo-card {
     background-color: rgba(4, 42, 84, 0.7); }
 
   .font-title-card {
@@ -48,7 +48,6 @@
   .servico-topicos {
     margin: 3vh; }
     .servico-topicos p {
-      margin: 2vh 0;
       font-size: 1.2em; } }
 
-/*# sourceMappingURL=mediaQueries.css.map */
+/*# sourceMappingURL=desktop.css.map */

@@ -9,6 +9,7 @@
 }
 
 
+
 /**** Small Desktop ****/
 @media screen and (max-width: 1428px ) {
 
@@ -50,7 +51,7 @@
     //background-image: linear-gradient(#002545, #0178f3);
     height: 50vh;
   }
-  .servico-emprestico-card{
+  .servico-emprestimo-card{
     background-color: rgba(4,42,84, .7);
   }
   .font-title-card{
@@ -59,7 +60,7 @@
   .servico-topicos{
     margin: 3vh;
     p{
-      margin: 2vh 0;
+
       font-size: 1.2em;
     }
   }
