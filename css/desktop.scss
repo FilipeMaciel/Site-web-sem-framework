@@ -29,9 +29,6 @@
     opacity: .85;
   }
   /**** CARD SLIDE ****/
-  .servico-card-slide{
-    height: 45vh;
-  }
   .financiamento{
     height: 75vh;
   }
@@ -47,7 +44,7 @@
     background-color: rgba(4,42,84, .7);
   }
 
-  .servico-emprestimo{
+  .servico-section{
     //background-image: linear-gradient(#002545, #0178f3);
     height: 50vh;
   }
@@ -65,3 +62,30 @@
     }
   }
 }
+
+//sumir coisas no tamanho l para tamanho m
+@media only screen and (max-width: 1050px) {
+  .servico-slider-image-card{
+    //display: none!important;
+  }
+  .servico-cont-imagem{
+    display: none;
+  }
+}
+@media only screen and (max-width: 1049px) {
+  .servico-contato{
+    height: 150vh;
+  }
+  .financiamento{
+    min-height: 750px;
+  }
+  .servico-consorcio{
+    min-height: 750px
+  }
+  .servico-slider-card{
+    position: relative;
+    width: 100%!important;
+  }
+}
+
+//Sumir coisas do tamanho

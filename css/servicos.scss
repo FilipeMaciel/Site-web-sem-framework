@@ -80,7 +80,7 @@
   position: relative;
 }
 .servico-title-conteiner{
-  height: 15vh;
+  min-height: 100px;
 }
 .servico-title{
   text-align: center;
@@ -94,14 +94,15 @@
 .servico-slider-card{
   position: relative;
   display: block;
-  max-height: 50vh!important;
-  min-height: 50vh!important;
+  height: 350px;
+  min-height: 500px;
   .default-botao-saiba-mais{
     bottom: 15%;
     left: 40px;
   }
 }
 .servico-slider-card-conteudo{
+  position: relative;
   padding: 20px 30px 30px 30px;
   height: 100%;
 }
@@ -132,15 +133,7 @@
   height: 100%;
   position: relative;
 }
-.servico-slider-card-conteiner-img{
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-y: bottom;
-  -moz-background-size: contain;
-  width: 100%;
-  //background-color: #002d54;
-  height: 300px;
-}
+
 
 .servico-finan-img1{
   background-image: url("../imagens/familia-MCMV.png");
@@ -154,11 +147,7 @@
 
 
 /******** Seguros de vida ********/
-.servico-seguro{
-  @extend .servico-section-blue;
-  height: 60vh;
-  //background-color: #002545;
-}
+
 .servico-conteiner-card{
   position: relative;
   height: 100%;
@@ -209,10 +198,10 @@
   //background-image: linear-gradient(#002545, #ffffff);
   position: relative;
 }
-.servico-emprestimo{
+.servico-section{
   @extend .servico-section-blue;
-  //background-image: linear-gradient(#002545, #0178f3);
   height: 60vh;
+  min-height: 350px!important;
   position: relative;
 }
 
@@ -221,7 +210,6 @@
   position: relative;
   height: 80vh;
   width: 100%;
-  //background-image: linear-gradient(#f66201 5%, #eeeeee );
   background-color: #f6f6f6;
   .default-botao-saiba-mais{
     background-color: #002d54;
@@ -231,13 +219,6 @@
       background-color: #f66201;
     }
   }
-}
-.servico-titulo-consorcio{
-  height: 15vh;
-}
-.servico-consorcio-title{
-  text-align: center;
-
 }
 .servico-consorcio-conteiner-card{
   height: 100%;
@@ -249,10 +230,15 @@
 .servico-slider-card-conteiner-img{
   background-repeat: no-repeat;
   background-size: contain;
-  background-position-y: bottom;
+  background-position-y: bottom!important;
   width: 100%;
-  //background-color: #002d54;
   height: 300px;
+  background-position-x: center;
+  -moz-background-size: contain;
+}
+.servico-consor-img{
+  position: relative;
+  bottom: 0;
 }
 .servico-slider-card-conteiner-img::after{
   content: '';
@@ -262,6 +248,7 @@
   margin: 300px auto;
   display: block;
 }
+
 .servico-consor-img1{
   background-image: url("../imagens/consorcio-imovel.png");
 }
@@ -314,11 +301,11 @@
   height: 100%;
   margin-right: 5px;
   transition: all .2s;
+  margin-bottom: 10px;
 }
 .servico-contato-card-conteudo{
   padding: 20px;
   height: 100%;
-
 }
 
 .servico-contato-topicos{
@@ -366,6 +353,10 @@
   height: 10vh;
 }
 .servico-contato-footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   height: 10vh;
   p{
     text-align: center;

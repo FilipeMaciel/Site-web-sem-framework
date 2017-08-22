@@ -31,11 +31,12 @@
 </head>
 <body>
 <main>
-    <nav class="cabecalho row">
+    <nav class="cabecalho row ">
+
         <div class="content-logo center-center col offset-l1 l1">
             <a href="#home" class="logo"></a>
         </div>
-        <div class="conteiner-menu col l5 offset-l5">
+        <div class="conteiner-menu-desk col l5 offset-l5">
             <ul class="menu-desk font-bold">
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#quem-somos">A NOSSA EMPRESA</a></li>
@@ -52,11 +53,93 @@
                 <li><a href="#contato">CONTATO</a></li>
             </ul>
         </div>
-    </nav>
 
+
+        <!-- Mobile -->
+        <div class="conteiner-icone-mobile center-center">
+            <label for="mobile-check" class="mobile-label">
+                <div class="mobile-icon-content center-center">
+                    <input type="checkbox" id="mobile-check">
+                    <span class="icone-cabecalho"></span>
+                </div>
+            </label>
+        </div>
+
+
+        <div class="mobile-bg-menu">
+
+        </div>
+        <div class="conteiner-mobile">
+
+            <div class="cabecalho-mobile">
+                <div class="content-logo-menu-mobile center-center">
+                    <a href="#home" class="logo-menu-mobile"></a>
+                </div>
+            </div>
+            <input type="checkbox" id="submenu-mobile">
+            <ul class="menu-mobile font-bold">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#quem-somos">A NOSSA EMPRESA</a></li>
+                <li><label for="submenu-mobile" id="submenu-link">SERVIÇOS +<span></span></label>
+                    <ul class="submenu">
+                        <!--
+                        <label for="submenu-mobile" class="mobile-submenu-close">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 224.512 224.512" style="enable-background:new 0 0 224.512 224.512;" xml:space="preserve">
+<g>
+	<polygon style="fill:#010002;" points="224.507,6.997 217.521,0 112.256,105.258 6.998,0 0.005,6.997 105.263,112.254
+		0.005,217.512 6.998,224.512 112.256,119.24 217.521,224.512 224.507,217.512 119.249,112.254 	"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+                        </label>
+                        -->
+                        <li><label for="submenu-mobile">FECHAR SUBMENU [x]</label></li>
+                        <li><a href="#servicos">FINANCIAMENTO</a></li>
+                        <li><a href="#consignado">CONSIGNADO</a></li>
+                        <li><a href="#emprestimo-pessoal">EMPRÉSTIMO PESSOAL</a></li>
+                        <li><a href="#seguro-vida">SEGURO DE VIDA</a></li>
+                        <li><a href="#abertura-conta">ABERTURA DE CONTA</a></li>
+                        <li><a href="#consorcio">CONSÓRCIO</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contato">CONTATO</a></li>
+            </ul>
+        </div>
+        
+    </nav>
     <!-- Header -->
     <a name="home" class="scroll-header"></a>
-    <header class="center-center font-text-white anime-div-pai">
+    <header class="header center-center font-text-white anime-div-pai">
 
         <div class="header-conteiner ">
 
@@ -99,12 +182,12 @@
     <!-- Quem Somos -->
     <a name="quem-somos" class="scroll-quem-somos"></a>
     <section class="servico-quem-somos anime-div-pai">
-        <div class="row center-center servico-title-conteiner servico-titulo-empresa font-title-max text-white anime-left">
+        <div class="center-center servico-title-conteiner servico-titulo-empresa font-title-max text-white anime-left">
             <h1 class="servico-title col l12">A NOSSA <span class="font-bold">EMPRESA</span></h1>
         </div>
         <div class="servico-quem-somos-card-conteiner row">
-            <div class="servico-quem-somos-card center-center col l6 m6 offset-l3 offset-m3 servico-topicos text-white anime-right">
-                <p class="">A <span class="font-bold">Vizzar Consultoria</span> foi fundada em agosto de 2014 e possui como <br>
+            <div class="servico-quem-somos-card center-center col l6 m12 offset-l3 s12 servico-topicos text-white anime-right">
+                <p class="">A <span class="font-bold">Vizzar Consultoria</span> foi fundada em agostode 2014 e possui como <br>
                     principal objetivo facilitar os trâmites entre os nossos clientes <br>
                     e os serviços da <span class="font-bold">Caixa Economica Federal</span>. </p>
                 <p>
@@ -117,7 +200,6 @@
                         <div class="servico-quem-somos-img"></div>
                     </div>
                 </div>
-                <div class="servico-quemsomos-img"></div>
             </div>
         </div>
     </section>
@@ -125,11 +207,11 @@
     <!-- Financiamento -->
     <section class="financiamento anime-div-pai">
         <a name="servicos" class="scroll-servicos"></a>
-        <div class=" font-text-azul row center-center servico-title-conteiner font-title-max anime-left">
+        <div class="font-text-azul  center-center servico-title-conteiner font-title-max anime-left">
             <h1 class=" servico-title col l12"><span class="font-bold">FINANCIAMENTOS</span> CAIXA</h1>
         </div>
         <div class="row">
-            <div class="servico-slider-card default-background-blue col offset-l1 offset-s1 offset-m1 s10 m6 l6 text-white anime-left">
+            <div class="servico-slider-card default-background-blue col offset-l1 s12 m12 l6 text-white anime-left">
 
                 <!-- Minha casa minha vida -->
                 <div class="servico-slider-card-conteudo finan-card ">
@@ -196,27 +278,27 @@
                 </div>
             </div>
 
-            <div class="servico-slider-image-card col l3 offset-l1 center-center anime-right">
-                <div class="servico-slider-card-conteiner-img servico-finan-img servico-finan-img1 "></div>
-                <div class="servico-slider-card-conteiner-img servico-finan-img servico-finan-img2 "></div>
-                <div class="servico-slider-card-conteiner-img servico-finan-img servico-finan-img3 "></div>
-                <div class="servico-slider-card-conteiner-img servico-finan-img servico-finan-img2 "></div>
-                <div class="servico-slider-card-conteiner-img servico-finan-img servico-finan-img2 "></div>
+            <div class="servico-slider-image-card col l3 offset-l1 m12 s12 center-center anime-right">
+                <div class="servico-slider-card-conteiner-img col m12 servico-finan-img servico-finan-img1 "></div>
+                <div class="servico-slider-card-conteiner-img col m12 servico-finan-img servico-finan-img2 "></div>
+                <div class="servico-slider-card-conteiner-img col m12 servico-finan-img servico-finan-img3 "></div>
+                <div class="servico-slider-card-conteiner-img col m12 servico-finan-img servico-finan-img2 "></div>
+                <div class="servico-slider-card-conteiner-img col m12 servico-finan-img servico-finan-img2 "></div>
             </div>
         </div>
     </section>
 
     <!-- Empréstimo Consignado -->
-    <section class="servico-emprestimo anime-div-pai">
+    <section class="servico-section anime-div-pai">
         <a name="consignado" class="scroll-consignado"></a>
         <div class="row row-conteiner">
-            <div class="servico-cont-imagem col xl4 m4 offset-x1 offset-m1 anime-left">
+            <div class="servico-cont-imagem col l4 m4 offset-l1 offset-m1 anime-left">
                 <h1 class="servico-consignado-imagem servico-imagem col l10 offset-l2">
 
                 </h1>
             </div>
-            <div class="servico-conteiner-card center-center col offset-l6 l5 offset-m6 m5 offset-s1 s10 text-white anime-right">
-                <div class="servico-card col l11">
+            <div class="servico-conteiner-card center-center col offset-l6 l5 m12 s12 text-white anime-right">
+                <div class="servico-card col l11 m12 s12">
                     <div class="servico-seguro-card-conteudo">
                         <h1 class="font-title-card">Empréstimo <span class="font-bold font-text-azul-claro">Consignado</span></h1>
                         <div class="servico-topicos">
@@ -235,11 +317,11 @@
     </section>
 
     <!-- Empréstimo Pessoal -->
-    <section class="servico-emprestimo anime-div-pai">
+    <section class="servico-section anime-div-pai">
         <a name="emprestimo-pessoal" class="scroll-emprestimo-pessoal"></a>
         <div class="row row-conteiner">
-            <div class="servico-conteiner-card center-center col l5 offset-l1 text-white anime-left">
-                <div class="servico-card col l11">
+            <div class="servico-conteiner-card center-center col offset-l1 l5 m12 s12 text-white anime-left">
+                <div class="servico-card col l11 m12 s12">
                     <div class="servico-seguro-card-conteudo">
                         <h1 class="font-title-card">Empréstimo <span class="font-bold font-text-azul-claro">Pessoal</span></h1>
                         <div class="servico-topicos">
@@ -261,7 +343,7 @@
     </section>
 
     <!-- Seguro de vida -->
-    <section class="servico-seguro anime-div-pai">
+    <section class="servico-section anime-div-pai">
         <a name="seguro-vida" class="scroll-emprestimo-pessoal"></a>
         <div class="row row-conteiner">
             <div class="servico-cont-imagem col l5 offset-l1 anime-left">
@@ -270,8 +352,8 @@
                 </h1>
             </div>
 
-            <div class="servico-conteiner-card center-center col l5 offset-l6 text-white anime-right">
-                <div class="servico-card col l11">
+            <div class="servico-conteiner-card center-center col offset-l6 l5 m12 s12 text-white anime-right">
+                <div class="servico-card col l11 m12 s12">
                     <div class="servico-seguro-card-conteudo">
                         <h1 class="font-title-card">Seguro de <span class="font-bold font-text-azul-claro">Vida</span></h1>
                         <div class="servico-topicos">
@@ -286,12 +368,12 @@
     </section>
 
     <!-- Abertura de Contas -->
-    <section class="servico-seguro anime-div-pai">
+    <section class="servico-section anime-div-pai">
         <a name="abertura-conta" class="scroll-emprestimo-pessoal"></a>
         <div class="row servico-conteiner">
 
-            <div class="servico-conteiner-card center-center col l5 offset-l1 text-white anime-left">
-                <div class="servico-card col l11">
+            <div class="servico-conteiner-card center-center col offset-l1 l5 l5 m12 s12 text-white anime-left">
+                <div class="servico-card col l11 m12 s12">
                     <div class="servico-seguro-card-conteudo">
                         <h1 class="font-title-card">Abertura de <span class="font-bold font-text-azul-claro">Contas</span></h1>
                         <div class="servico-topicos">
@@ -316,11 +398,11 @@
     <!-- Consórcios Caixa -->
     <section class="servico-consorcio anime-div-pai">
         <a name="consorcio" class="scroll-servicos"></a>
-        <div class="servico-titulo-consorcio font-text-laranja row font-title-max center-center anime-left">
-            <h1 class=" servico-consorcio-title col l12"><span class="font-bold">CONSÓRCIOS </span> CAIXA</h1>
+        <div class="servico-title-conteiner font-text-laranja font-title-max center-center anime-left">
+            <h1 class="servico-title col l12"><span class="font-bold">CONSÓRCIOS </span> CAIXA</h1>
         </div>
         <div class="servico-card-slide row">
-            <div class="servico-slider-card default-background-orange col offset-l1 offset-s1 offset-m1 s10 m6 l6 text-white anime-left">
+            <div class="servico-slider-card default-background-orange col offset-l1  s12 m12 l6 text-white anime-left">
 
                 <!-- Consórcio de Imóveis -->
                 <div class="servico-slider-card-conteudo consorcio-card">
@@ -352,9 +434,9 @@
                 </div>
             </div>
 
-            <div class="servico-slider-image-card col l3 offset-l1 center-center anime-right">
-                <div class="servico-slider-card-conteiner-img servico-consor-img servico-consor-img1"></div>
-                <div class="servico-slider-card-conteiner-img servico-consor-img servico-consor-img2"></div>
+            <div class="servico-slider-image-card col l3 offset-l1 m12 s12 center-center anime-right">
+                <div class="servico-slider-card-conteiner-img col m12 servico-consor-img servico-consor-img1"></div>
+                <div class="servico-slider-card-conteiner-img col m12 servico-consor-img servico-consor-img2"></div>
             </div>
         </div>
 
@@ -368,11 +450,11 @@
     <section class="servico-contato anime-div-pai">
         <a name="contato" class="scroll-contato"></a>
         <div class="servico-titulo-contato font-text-cinza row font-title-max center-center anime-left">
-            <h1 class=" servico-consorcio-title col l12">ENTRE EM <span class="font-bold">CONTATO</span></h1>
+            <h1 class=" servico-consorcio-title">ENTRE EM <span class="font-bold">CONTATO</span></h1>
         </div>
         <div class="row servico-contato-conteiner-cards anime-right">
 
-            <div class="servico-contato-cards col offset-l2 offset-m1 offset-s1 l4 m5 s10 font-text-azul servico-contato-fale-conosco">
+            <div class="servico-contato-cards col offset-l2 offset-m1 offset-s1 l4 m10 s10 font-text-azul servico-contato-fale-conosco">
                 <div class="servico-contato-card-conteudo">
                     <h1 class="font-title-card servico-titulo-traco-blue">FALE <span class="font-bold">CONOSCO</span></h1>
                     <div class="servico-contato-topicos">
@@ -385,7 +467,7 @@
                     </div>
                 </div>
             </div>
-            <div class="servico-contato-cards offset-s1 col m5 l4 s10 font-text-laranja servico-contato-financiamento">
+            <div class="servico-contato-cards offset-s1 offset-m1 col m10 l4 s10 font-text-laranja servico-contato-financiamento">
                 <div class="servico-contato-card-conteudo">
                     <h1 class="font-title-card servico-titulo-traco-laranja">SIMULE O <span class="font-bold">SEU FINANCIAMENTO</span></h1>
                     <div class="servico-contato-topicos">
@@ -398,7 +480,7 @@
                 </div>
             </div>
         </div>
-        <div class="servico-contato-footer font-text-cinza col s12  font-title-max center-center anime-left">
+        <div class="servico-contato-footer font-text-cinza  font-title-max center-center anime-left">
             <p class="">Av. Transbrasiliana N 156 Uruaçu, Goiás <br>
                 CEP | 76400-000</p>
         </div>
@@ -420,6 +502,7 @@
 <!-- Script Slide Header -->
 <script src="libs/jquery-3.1.0.js"></script>
 <script src="libs/jquery-ui.js"></script>
+<script src="js/js.js"></script>
 <script src="js/slides.js"></script>
 <script src="js/animeScroll.js"></script>
 <script>

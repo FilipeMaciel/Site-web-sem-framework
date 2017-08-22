@@ -1,37 +1,548 @@
-/*
-Sass::SyntaxError: ".servico-conteiner-card" failed to @extend ".offset-s1".
-The selector ".offset-s1" was not found.
-Use "@extend .offset-s1 !optional" if the extend should be able to fail.
+.cabecalho {
+  width: 100%;
+  height: 10vh;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center; }
 
+.content-logo {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 25px; }
 
-Backtrace:
-./mobile.scss:6
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/extend.rb:56:in `block in check_extends_fired!'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/util/subset_map.rb:105:in `block in each_value'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/util/subset_map.rb:105:in `each'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/util/subset_map.rb:105:in `each_value'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/extend.rb:51:in `check_extends_fired!'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/extend.rb:16:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/root_node.rb:39:in `css_tree'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Sass::SyntaxError: \".servico-conteiner-card\" failed to @extend \".offset-s1\".\A The selector \".offset-s1\" was not found.\A Use \"@extend .offset-s1 !optional\" if the extend should be able to fail.\A "; }
+.logo, .logo-menu-mobile {
+  background-image: url("../imagens/vizzar-logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 50px; }
+  .logo:hover, .logo-menu-mobile:hover {
+    cursor: pointer; }
+
+.conteiner-menu-desk ul {
+  list-style: none;
+  display: flex;
+  height: 100%;
+  position: absolute;
+  right: 0; }
+
+.conteiner-menu-desk ul li {
+  position: relative; }
+
+.conteiner-menu-desk {
+  height: 100%; }
+  .conteiner-menu-desk li {
+    text-align: center;
+    height: 100%;
+    width: 150px;
+    color: #18355b;
+    font-weight: 400;
+    font-size: .8em; }
+    .conteiner-menu-desk li a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      height: 100%; }
+    .conteiner-menu-desk li:hover {
+      cursor: pointer; }
+
+.conteiner-menu-desk ul li a:hover {
+  color: #e16936; }
+
+.conteiner-menu-desk ul ul a:hover {
+  color: #e16936;
+  background-color: #ffffff; }
+
+.conteiner-menu-desk ul ul {
+  position: absolute;
+  display: block;
+  flex-direction: column;
+  visibility: hidden; }
+
+.white-rgba, .cabecalho, .conteiner-menu-desk ul ul li {
+  background-color: rgba(252, 252, 252, 0.98); }
+
+.conteiner-menu-desk ul ul li a {
+  padding: 10px 0; }
+
+.conteiner-menu-desk ul ul a {
+  padding: 10px 0; }
+
+.conteiner-menu-desk ul li:hover ul {
+  visibility: visible; }
+
+.menu-desk {
+  float: right;
+  display: flex;
+  flex-direction: row;
+  height: 100%; }
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 100vh; }
+
+.header-conteiner {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+.header-caixa-aqui {
+  background-image: url("../imagens/caixa-aqui.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  bottom: 5px;
+  right: 5px; }
+
+.header-img-conteiner {
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  top: 0; }
+
+.text-header {
+  text-align: center;
+  width: 100%;
+  height: 100%; }
+
+.center-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center; }
+
+.img-header1 {
+  background-image: url("../imagens/header-img-1.jpg"); }
+
+.img-header2 {
+  background-image: url("../imagens/minha-casa-minha-vida.jpg"); }
+
+.img-header3 {
+  background-image: url("../imagens/residencial.jpg"); }
+
+.mySlides {
+  display: none; }
+
+.arrow-left, .arrow-right, .badge {
+  cursor: pointer;
+  color: #ffffff; }
+
+.arrow-left {
+  position: absolute;
+  height: 30px;
+  left: 10px;
+  top: -100px;
+  width: 20px;
+  font-size: 40px;
+  z-index: 999; }
+
+.arrow-right {
+  position: absolute;
+  right: 10px;
+  top: -100px;
+  height: 30px;
+  width: 20px;
+  font-size: 40px; }
+
+.badge {
+  height: 15px;
+  width: 15px;
+  padding: 0;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 3px;
+  border: 1px solid #ccc !important; }
+
+.white {
+  background-color: #fff !important; }
+
+.badge {
+  color: #fff;
+  padding: 2px;
+  text-align: center; }
+
+.badge:hover {
+  background-color: #ffffff;
+  transition: all .1s; }
+
+.header-conteiner-botoes {
+  position: absolute;
+  bottom: 35%;
+  left: 0;
+  width: 100%;
+  background-color: transparent; }
+
+.header-align-botoes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.white {
+  background-color: #ffffff; }
+
+.header-image-conteiner {
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.prox {
+  position: absolute;
+  left: 100px;
+  top: 200px; }
+
+.prev {
+  position: absolute;
+  left: 0;
+  top: 200px; }
+
+/************ SlideShow Header ************/
+.mySlides {
+  display: none; }
+
+/* Slideshow container */
+.active, .dot:hover {
+  background-color: #ffffff; }
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center; }
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0; }
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px; }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease; }
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.8; }
+  to {
+    opacity: 1; } }
+@keyframes fade {
+  from {
+    opacity: .8;
+    transform: scale(1.01, 1.01); }
+  to {
+    opacity: 1; } }
+.conteiner-icone-mobile {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  height: 100%; }
+
+.conteiner-mobile {
+  z-index: 99;
+  transition: all .5s;
+  height: 100vh;
+  position: absolute;
+  left: -250px;
+  top: 0;
+  width: 220px;
+  background-color: #ffffff;
+  display: block; }
+
+.cabecalho-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 10vh;
+  min-height: 60px;
+  width: 100%;
+  position: relative;
+  right: 0;
+  top: 0; }
+
+.content-logo-menu-mobile {
+  height: 100%;
+  width: 100%; }
+
+.logo-menu-mobile {
+  background-image: url("../imagens/vizzar-logo.png");
+  width: 130px; }
+
+.mobile-icon-content {
+  height: 50px;
+  width: 50px; }
+
+.mobile-label {
+  z-index: 101;
+  width: 50px;
+  display: none; }
+  .mobile-label:hover {
+    cursor: pointer; }
+
+#mobile-check {
+  display: none; }
+
+#submenu-mobile {
+  display: none; }
+
+.mobile-bg-menu {
+  display: none; }
+
+#mobile-check:checked .icone-cabecalho {
+  transform: rotate(20deg); }
+
+.menu-mobile {
+  position: relative; }
+
+.mobile-bg-menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.mobile-icones-menu, #submenu-link, .menu-mobile li a, .submenu li label {
+  font-weight: 600;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  width: 100%;
+  height: 60px;
+  border-left: 2px solid #ffffff; }
+  .mobile-icones-menu:hover, #submenu-link:hover, .menu-mobile li a:hover, .submenu li label:hover {
+    cursor: pointer;
+    border-left: 2px solid #f66201;
+    background-color: #f3f3f3;
+    color: #f66201; }
+
+#submenu-link span {
+  display: block;
+  float: right; }
+
+.submenu li a {
+  height: 50px !important;
+  border-left: 0 solid #ffffff; }
+  .submenu li a:hover {
+    cursor: pointer;
+    background-color: #f3f3f3;
+    color: #f66201; }
+
+.mobile-submenu-close {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  position: absolute;
+  right: -40px;
+  top: 0; }
+  .mobile-submenu-close:hover {
+    cursor: pointer; }
+
+.conteiner-mobile ul ul li {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  display: block;
+  flex-direction: row;
+  justify-content: center; }
+
+.icone-cabecalho {
+  z-index: 999;
+  width: 30px;
+  height: 3.2px;
+  background-color: #002d54;
+  visibility: visible;
+  border-radius: 2px;
+  position: relative; }
+
+.icone-cabecalho:before {
+  visibility: visible;
+  content: '';
+  width: 35px;
+  height: 3px;
+  background-color: #002d54;
+  display: inline-block;
+  position: absolute;
+  top: -10px;
+  border-radius: 2px; }
+
+.icone-cabecalho:after {
+  visibility: visible;
+  content: '';
+  width: 35px;
+  height: 3px;
+  background-color: #002d54;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  border-radius: 2px; }
+
+#mobile-check:checked ~ .icone-cabecalho {
+  visibility: hidden; }
+
+#mobile-check:checked ~ .icone-cabecalho:after {
+  transform: rotate(40deg);
+  top: 0;
+  background-color: #ffffff; }
+
+#mobile-check:checked ~ .icone-cabecalho:before {
+  transform: rotate(-40deg);
+  top: 0;
+  background-color: #ffffff; }
+
+.submenu {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 92%;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
+  height: 90vh;
+  transition: all .5s;
+  background-color: #ffffff; }
+
+.submenu li label {
+  background-color: #f66201;
+  color: #ffffff;
+  border-left: none; }
+  .submenu li label:hover {
+    border-left: none;
+    opacity: .9;
+    background-color: #f66201;
+    color: #ffffff; }
+
+.submenu li:first-child {
+  margin-bottom: 10px; }
+
+@media only screen and (min-width: 800px) {
+  .conteiner-menu-desk {
+    display: flex; }
+
+  .cabecalho-mobile {
+    display: none; }
+
+  .mobile-label {
+    display: none; } }
+@media only screen and (max-width: 800px) {
+  .conteiner-menu-desk {
+    display: none; }
+
+  .cabecalho-mobile {
+    display: flex; }
+
+  .mobile-label {
+    display: flex; } }
+@media only screen and (max-width: 650px) {
+  .cabecalho {
+    min-height: 60px; }
+
+  .logo, .logo-menu-mobile {
+    height: 40px; }
+
+  .header {
+    max-height: 75vh; }
+
+  .header-img-conteiner {
+    height: 100%;
+    width: 100%;
+    top: 0; }
+
+  .servico-section {
+    height: 60vh; }
+
+  .font-title-max h1 {
+    font-size: 2.5em; }
+
+  .default-botao-saiba-mais {
+    left: 10px !important;
+    bottom: 20px; }
+
+  .servico-slider-card {
+    height: 310px; }
+
+  .servico-topicos {
+    margin: 0; }
+    .servico-topicos p {
+      line-height: .9;
+      padding: 3px;
+      font-size: 1.2em;
+      font-weight: 300; }
+
+  .servico-slider-card-conteudo {
+    padding: 20px 10px 20px 10px;
+    height: 100%;
+    width: 100%; }
+
+  .servico-card-slider-botoes {
+    height: 20px;
+    width: 100%;
+    margin: 0 auto 25px; }
+
+  /***** Imagem quem somos *****/
+  .servico-quem-somos {
+    height: 80vh;
+    min-height: 400px; }
+
+  .servico-quem-somos-card {
+    height: 250px;
+    min-height: 320px; }
+
+  .servico-quem-somos-header {
+    width: 70px;
+    height: 70px; }
+
+  .servico-quem-somos-img {
+    background-size: 50px;
+    width: 70px;
+    height: 70px; } }
+
+/*# sourceMappingURL=mobile.css.map */

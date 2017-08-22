@@ -19,9 +19,6 @@
     opacity: .85; }
 
   /**** CARD SLIDE ****/
-  .servico-card-slide {
-    height: 45vh; }
-
   .financiamento {
     height: 75vh; }
 
@@ -36,7 +33,7 @@
     height: 35vh;
     background-color: rgba(4, 42, 84, 0.7); }
 
-  .servico-emprestimo {
+  .servico-section {
     height: 50vh; }
 
   .servico-emprestimo-card {
@@ -49,5 +46,21 @@
     margin: 3vh; }
     .servico-topicos p {
       font-size: 1.2em; } }
+@media only screen and (max-width: 1050px) {
+  .servico-cont-imagem {
+    display: none; } }
+@media only screen and (max-width: 1049px) {
+  .servico-contato {
+    height: 150vh; }
+
+  .financiamento {
+    min-height: 750px; }
+
+  .servico-consorcio {
+    min-height: 750px; }
+
+  .servico-slider-card {
+    position: relative;
+    width: 100% !important; } }
 
 /*# sourceMappingURL=desktop.css.map */
