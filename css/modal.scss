@@ -1,0 +1,114 @@
+.modal-conteiner{
+  width: 100%;
+  height: 100vh;
+  //background-color: rgba(0,0,0,.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  display: none;
+}
+.modal-bg{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 90;
+  background-color: #ffffff;
+  opacity: .8;
+}
+
+.modal-text{
+  position: relative;
+  width: 80%;
+  background-color: #002d54;
+  opacity: .95;
+  z-index: 100;
+  padding: 40px 40px 40px 40px!important;
+  overflow-y: scroll;
+  max-height: 70vh;
+  p{
+    position: relative;
+    margin: 0 auto;
+    z-index: 101;
+    color: #ffffff;
+    line-height: 1.1;
+    line-break: auto;
+    padding: 5px;
+    font-size: 1.3em;
+    font-weight: 300;
+  }
+  p:nth-last-of-type(1) {
+    margin-bottom: 30px;
+  }
+}
+
+.modal-conteiner-close{
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 9999;
+  transition: all .5s;
+  border-radius: 3px;
+  &:hover{
+    cursor: pointer;
+  }
+}
+.modal-conteiner-close:hover .modal-close:before{
+  transition: all .8s;
+  transform: rotate(400deg);
+}
+.modal-conteiner-close:hover .modal-close:after{
+  transition: all .8s;
+  transform: rotate(-400deg);
+}
+#modal{
+  display: none;
+}
+.modal-close{
+  width: 30px;
+  height: 3px;
+  background-color: #002d54;
+  border-radius: 3px;
+  display: block;
+  visibility: hidden;
+}
+.modal-close:before{
+  content: '';
+  width: 30px;
+  height: 3px;
+  background-color: #002d54;
+  border-radius: 3px;
+  position: absolute;
+  top: 20px;
+  visibility: visible;
+  transform: rotate(40deg);
+}
+.modal-close:after{
+  content: '';
+  width: 30px;
+  height: 3px;
+  background-color: #002d54;
+  border-radius: 3px;
+  position: absolute;
+  top: 20px;
+  visibility: visible;
+  transform: rotate(-40deg);
+}
+/*****Scrol bar modal *****/
+.modal-text::-webkit-scrollbar-track {
+  background-color: #F4F4F4;
+}
+.modal-text::-webkit-scrollbar {
+  width: 6px;
+  background: #F4F4F4;
+
+}
+.modal-text::-webkit-scrollbar-thumb {
+  background: #e16835;
+  -moz-appearance: inherit !important;
+}

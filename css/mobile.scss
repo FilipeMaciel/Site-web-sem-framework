@@ -39,6 +39,7 @@
 .mobile-icon-content{
   height: 50px;
   width: 50px;
+  transition: all .5s;
 }
 .mobile-label{
   z-index: 101;
@@ -145,7 +146,7 @@
   visibility: visible;
   content: '';
   width: 35px;
-  height: 3px;
+  height: 3.2px;
   background-color: #002d54;
   display: inline-block;
   position: absolute;
@@ -156,7 +157,7 @@
   visibility: visible;
   content: '';
   width: 35px;
-  height: 3px;
+  height: 3.2px;
   background-color: #002d54;
   display: inline-block;
   position: absolute;
@@ -277,11 +278,17 @@
     width: 100%;
     margin: 0 auto 25px;
   }
+  .header-conteiner-botoes {
+    bottom: 25%;
+  }
+  .prev, .next {
+    top: 60%;
+  }
 
   /***** Imagem quem somos *****/
   .servico-quem-somos {
-    height: 80vh;
-    min-height: 400px;
+    height: 55vh;
+    min-height: 450px;
   }
   .servico-quem-somos-card{
     height: 250px;
@@ -297,9 +304,27 @@
     width: 70px;
     height: 70px;
   }
-
+  .scroll-quem-somos{
+    bottom: 35%;
+  }
+  .scroll-servicos{
+    top: -10.5%;
+  }
+  .scroll-contato{
+    top: -7.5%;
+  }
+  .header-caixa-aqui{
+    width: 50px;
+    height: 50px;
+  }
 }
+
 
 @media only screen and (max-width: 900px) {
 
+}
+@media only screen and (max-width: 480px) {
+  .scroll-quem-somos{
+    bottom: 35%;
+  }
 }

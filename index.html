@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/desktop.css">
     <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="css/cores.css">
+    <link rel="stylesheet" href="css/modal.css">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta name="description" content="Representante caixa aqui!">
     <meta name="keywords" content="caixa economica federal, caixa, caixa economica, financiamento, financiamento caixa, consórcio, consorcio caixa, seguro amparo, Minha casa minha vida, Caixa Aqui!">
@@ -123,7 +124,7 @@
 </svg>
                         </label>
                         -->
-                        <li><label for="submenu-mobile">FECHAR SUBMENU [x]</label></li>
+                        <li><label for="submenu-mobile">FECHAR SUBMENU [ X ]</label></li>
                         <li><a href="#servicos">FINANCIAMENTO</a></li>
                         <li><a href="#consignado">CONSIGNADO</a></li>
                         <li><a href="#emprestimo-pessoal">EMPRÉSTIMO PESSOAL</a></li>
@@ -207,7 +208,7 @@
     <!-- Financiamento -->
     <section class="financiamento anime-div-pai">
         <a name="servicos" class="scroll-servicos"></a>
-        <div class="font-text-azul  center-center servico-title-conteiner font-title-max anime-left">
+        <div class="font-text-azul  center-center servico-title-conteiner font-title-max anime-right">
             <h1 class=" servico-title col l12"><span class="font-bold">FINANCIAMENTOS</span> CAIXA</h1>
         </div>
         <div class="row">
@@ -221,7 +222,7 @@
                         <p>Parcelas que cabem no seu bolso.</p>
                         <p>Financiamento em até 360 meses.</p>
                     </div>
-                    <span class="default-botao-saiba-mais">Saiba Mais</span>
+                    <label for="modal" id="mais-info-mcmv" class="default-botao-saiba-mais">Saiba Mais</label>
                 </div>
 
                 <!-- Reforma e Ampliação -->
@@ -232,7 +233,7 @@
                         <p>Menores taxas de juros do mercado.</p>
                         <p>Financiamento em até 360 meses.</p>
                     </div>
-                    <span class="default-botao-saiba-mais">Saiba Mais</span>
+                    <label for="modal" class="default-botao-saiba-mais" id="mais-info-reforma">Saiba Mais</label>
                 </div>
 
                 <!-- Aquisição de Terreno e Construção -->
@@ -243,7 +244,7 @@
                         <p>Menores taxas de juros do mercado.</p>
                         <p>Financiamento em até 360 meses.</p>
                     </div>
-                    <span class="default-botao-saiba-mais">Saiba Mais</span>
+                    <label for="modal" id="mais-info-terreno-construcao" class="default-botao-saiba-mais">Saiba Mais</label>
                 </div>
 
                 <!-- Construção em Terreno Próprio -->
@@ -254,7 +255,7 @@
                         <p>Menores taxas de juros do mercado.</p>
                         <p>Financiamento em até 360 meses.</p>
                     </div>
-                    <span class="default-botao-saiba-mais">Saiba Mais</span>
+                    <label for="modal" id="mais-info-terreno-proprio" class="default-botao-saiba-mais">Saiba Mais</label>
                 </div>
 
                 <!-- SBPE -->
@@ -266,7 +267,7 @@
                         <p>Aquisição de Terreno e Construção Residencial e Comercial.</p>
                         <p>Reforma e/ou Ampliação.</p>
                     </div>
-                    <span class="default-botao-saiba-mais">Saiba Mais</span>
+                    <label for="modal" id="mais-info-sbpe" class="default-botao-saiba-mais">Saiba Mais</label>
                 </div>
                 <div class="servico-card-slider-botoes center-row">
                     <span class="badge badge-finan" onclick="currentSlideFinan(1)"></span>
@@ -330,7 +331,7 @@
                                 pensionistas e servidores públicos).</p>
                             <p>Simule seu consignado sem sair de casa.</p>
                         </div>
-                        <span class="default-botao-saiba-mais">Saiba Mais</span>
+                        <label for="modal" id="mais-info-emp-pessoal" class="default-botao-saiba-mais">Saiba Mais</label>
                     </div>
                 </div>
             </div>
@@ -360,7 +361,7 @@
                             <p>Seguro Amparo. </p>
                             <p>Seguro Vida da Gente.</p>
                         </div>
-                        <span class="default-botao-saiba-mais">Saiba Mais</span>
+                        <label for="modal" id="mais-info-seguro" class="default-botao-saiba-mais">Saiba Mais</label>
                     </div>
                 </div>
             </div>
@@ -381,7 +382,7 @@
                             <p>Conta Poupança.</p>
                             <p>Cartões de Crédito.</p>
                         </div>
-                        <span class="default-botao-saiba-mais">Saiba Mais</span>
+                        <label for="modal" id="mais-info-abert-conta" class="default-botao-saiba-mais">Saiba Mais</label>
                     </div>
                 </div>
             </div>
@@ -398,7 +399,7 @@
     <!-- Consórcios Caixa -->
     <section class="servico-consorcio anime-div-pai">
         <a name="consorcio" class="scroll-servicos"></a>
-        <div class="servico-title-conteiner font-text-laranja font-title-max center-center anime-left">
+        <div class="servico-title-conteiner font-text-laranja font-title-max center-center anime-right">
             <h1 class="servico-title col l12"><span class="font-bold">CONSÓRCIOS </span> CAIXA</h1>
         </div>
         <div class="servico-card-slide row">
@@ -482,7 +483,8 @@
         </div>
         <div class="servico-contato-footer font-text-cinza  font-title-max center-center anime-left">
             <p class="">Av. Transbrasiliana N 156 Uruaçu, Goiás <br>
-                CEP | 76400-000</p>
+                CEP | 76400-000 <br>
+                (62) 3357-1596</p>
         </div>
     </section>
 
@@ -492,7 +494,246 @@
 
     </section>
 
+    <!-- Modais -->
+    <section class="modal-section">
 
+        <div class="modal-conteiner center-center row">
+            <div class="modal-bg"></div>
+                <input type="checkbox" id="modal">
+
+
+                    <!-- Texto Mais informações de Minha Casa Minha Vida -->
+                    <div class="modal-text modal-text-mcmv ">
+                        <label class="modal-conteiner-close center-center" for="modal">
+                            <span class="modal-close"></span>
+                        </label>
+                        <p>Nesta modalidade, existem quatro faixas de renda contempladas. São elas:</p>
+
+                        <p class="font-bold">Famílias com renda de até R$ 1.800,00:</p>
+                        <p>Faixa 1 - A Caixa oferece várias vantagens para a sua família. Conte com um financiamento de até 120 meses, com prestações mensais que variam de R$ 80,00 a R$ 270,00, conforme a renda bruta familiar. A garantia para o financiamento é o imóvel que você vai adquirir. Assim, fica muito mais fácil realizar o sonho da casa própria.</p>
+
+                        <p class="font-bold">Famílias com renda de até R$ 2.600,00:</p>
+                        <p>Faixa 1,5: Você pode adquirir um imóvel novo com taxas de juros de apenas 5% ao ano e até 30 anos para pagar e subsídios de até 47,5 mil reais.</p>
+
+                        <p>Nas FAIXAS 2 e 3 você tem até 30 anos para pagar e pode comprar um imóvel novo ou na planta, comprar terreno e construir sua casa do jeito que sempre quis ou ainda construir em um terreno que já é seu.</p>
+
+                        <p>Famílias com renda de até R$ 3,600,00:</p>
+                        <p>FAIXA 2: Se sua família tem renda bruta de até R$ 3.600,00, você se encaixa nesta faixa do Programa Minha Casa Minha Vida e pode ter subsídios de até R$ 29.000,00.</p>
+
+                        <p>Famílias com renda de até R$ 6.500,00:</p>
+                        <p>FAIXA 3: Para famílias com renda bruta de até R$ 6.500,00​​, a faixa 3 do Programa Minha Casa Minha Vida oferece taxas de juros diferenciadas em relação ao mercado para você conquistar uma casa própria.</p>
+
+                        <a href="http://www8.caixa.gov.br/siopiinternet-web/simulaOperacaoInternet.do?method=inicializarCasoUso" class="default-btn-simulacao" target="_blank">Simule seu financiamento</a>
+
+                    </div>
+
+                    <!-- Texto mais informações de reforma -->
+                    <div class="modal-text modal-text-reforma">
+                        <label class="modal-conteiner-close center-center" for="modal">
+                            <span class="modal-close"></span>
+                        </label>
+                        <p>Nesta modalidade, existem quatro faixas de renda contempladas. São elas:</p>
+
+                        <p class="font-bold">Famílias com renda de até R$ 1.800,00:</p>
+                        <p>Faixa 1 - A Caixa oferece várias vantagens para a sua família. Conte com um financiamento de até 120 meses, com prestações mensais que variam de R$ 80,00 a R$ 270,00, conforme a renda bruta familiar. A garantia para o financiamento é o imóvel que você vai adquirir. Assim, fica muito mais fácil realizar o sonho da casa própria.</p>
+
+                        <p class="font-bold">Famílias com renda de até R$ 2.600,00:</p>
+                        <p>Faixa 1,5: Você pode adquirir um imóvel novo com taxas de juros de apenas 5% ao ano e até 30 anos para pagar e subsídios de até 47,5 mil reais.</p>
+
+                        <p>Nas FAIXAS 2 e 3 você tem até 30 anos para pagar e pode comprar um imóvel novo ou na planta, comprar terreno e construir sua casa do jeito que sempre quis ou ainda construir em um terreno que já é seu.</p>
+
+                        <p>Famílias com renda de até R$ 3,600,00:</p>
+                        <p>FAIXA 2: Se sua família tem renda bruta de até R$ 3.600,00, você se encaixa nesta faixa do Programa Minha Casa Minha Vida e pode ter subsídios de até R$ 29.000,00.</p>
+
+                        <p>Famílias com renda de até R$ 6.500,00:</p>
+                        <p>FAIXA 3: Para famílias com renda bruta de até R$ 6.500,00​​, a faixa 3 do Programa Minha Casa Minha Vida oferece taxas de juros diferenciadas em relação ao mercado para você conquistar uma casa própria.</p>
+
+
+
+
+                        <p>Nesta modalidade, existem quatro faixas de renda contempladas. São elas:</p>
+
+                        <p class="font-bold">Famílias com renda de até R$ 1.800,00:</p>
+                        <p>Faixa 1 - A Caixa oferece várias vantagens para a sua família. Conte com um financiamento de até 120 meses, com prestações mensais que variam de R$ 80,00 a R$ 270,00, conforme a renda bruta familiar. A garantia para o financiamento é o imóvel que você vai adquirir. Assim, fica muito mais fácil realizar o sonho da casa própria.</p>
+
+                        <p class="font-bold">Famílias com renda de até R$ 2.600,00:</p>
+                        <p>Faixa 1,5: Você pode adquirir um imóvel novo com taxas de juros de apenas 5% ao ano e até 30 anos para pagar e subsídios de até 47,5 mil reais.</p>
+
+                        <p>Nas FAIXAS 2 e 3 você tem até 30 anos para pagar e pode comprar um imóvel novo ou na planta, comprar terreno e construir sua casa do jeito que sempre quis ou ainda construir em um terreno que já é seu.</p>
+
+                        <p>Famílias com renda de até R$ 3,600,00:</p>
+                        <p>FAIXA 2: Se sua família tem renda bruta de até R$ 3.600,00, você se encaixa nesta faixa do Programa Minha Casa Minha Vida e pode ter subsídios de até R$ 29.000,00.</p>
+
+                        <p>Famílias com renda de até R$ 6.500,00:</p>
+                        <p>FAIXA 3: Para famílias com renda bruta de até R$ 6.500,00​​, a faixa 3 do Programa Minha Casa Minha Vida oferece taxas de juros diferenciadas em relação ao mercado para você conquistar uma casa própria.</p>
+
+                        <a href="http://www8.caixa.gov.br/siopiinternet-web/simulaOperacaoInternet.do?method=inicializarCasoUso" class="default-btn-simulacao" target="_blank">Simule seu financiamento</a>
+                    </div>
+
+                    <!-- Texto mais informações de Terreno e Construção -->
+                    <div class="modal-text modal-text-tereno-construcao">
+                        <label class="modal-conteiner-close center-center" for="modal">
+                            <span class="modal-close"></span>
+                        </label>
+                        <p>TEste Nesta modalidade, existem quatro faixas de renda contempladas. São elas:</p>
+
+                        <p class="font-bold">Famílias com renda de até R$ 1.800,00:</p>
+                        <p>Faixa 1 - A Caixa oferece várias vantagens para a sua família. Conte com um financiamento de até 120 meses, com prestações mensais que variam de R$ 80,00 a R$ 270,00, conforme a renda bruta familiar. A garantia para o financiamento é o imóvel que você vai adquirir. Assim, fica muito mais fácil realizar o sonho da casa própria.</p>
+
+                        <p class="font-bold">Famílias com renda de até R$ 2.600,00:</p>
+                        <p>Faixa 1,5: Você pode adquirir um imóvel novo com taxas de juros de apenas 5% ao ano e até 30 anos para pagar e subsídios de até 47,5 mil reais.</p>
+
+                        <p>Nas FAIXAS 2 e 3 você tem até 30 anos para pagar e pode comprar um imóvel novo ou na planta, comprar terreno e construir sua casa do jeito que sempre quis ou ainda construir em um terreno que já é seu.</p>
+
+                        <p>Famílias com renda de até R$ 3,600,00:</p>
+                        <p>FAIXA 2: Se sua família tem renda bruta de até R$ 3.600,00, você se encaixa nesta faixa do Programa Minha Casa Minha Vida e pode ter subsídios de até R$ 29.000,00.</p>
+
+                        <p>Famílias com renda de até R$ 6.500,00:</p>
+                        <p>FAIXA 3: Para famílias com renda bruta de até R$ 6.500,00​​, a faixa 3 do Programa Minha Casa Minha Vida oferece taxas de juros diferenciadas em relação ao mercado para você conquistar uma casa própria.</p>
+
+
+
+
+                        <p>Nesta modalidade, existem quatro faixas de renda contempladas. São elas:</p>
+
+                        <p class="font-bold">Famílias com renda de até R$ 1.800,00:</p>
+                        <p>Faixa 1 - A Caixa oferece várias vantagens para a sua família. Conte com um financiamento de até 120 meses, com prestações mensais que variam de R$ 80,00 a R$ 270,00, conforme a renda bruta familiar. A garantia para o financiamento é o imóvel que você vai adquirir. Assim, fica muito mais fácil realizar o sonho da casa própria.</p>
+
+                        <p class="font-bold">Famílias com renda de até R$ 2.600,00:</p>
+                        <p>Faixa 1,5: Você pode adquirir um imóvel novo com taxas de juros de apenas 5% ao ano e até 30 anos para pagar e subsídios de até 47,5 mil reais.</p>
+
+                        <p>Nas FAIXAS 2 e 3 você tem até 30 anos para pagar e pode comprar um imóvel novo ou na planta, comprar terreno e construir sua casa do jeito que sempre quis ou ainda construir em um terreno que já é seu.</p>
+
+                        <p>Famílias com renda de até R$ 3,600,00:</p>
+                        <p>FAIXA 2: Se sua família tem renda bruta de até R$ 3.600,00, você se encaixa nesta faixa do Programa Minha Casa Minha Vida e pode ter subsídios de até R$ 29.000,00.</p>
+
+                        <p>Famílias com renda de até R$ 6.500,00:</p>
+                        <p>FAIXA 3: Para famílias com renda bruta de até R$ 6.500,00​​, a faixa 3 do Programa Minha Casa Minha Vida oferece taxas de juros diferenciadas em relação ao mercado para você conquistar uma casa própria.</p>
+
+                        <a href="http://www8.caixa.gov.br/siopiinternet-web/simulaOperacaoInternet.do?method=inicializarCasoUso" class="default-btn-simulacao" target="_blank">Simule seu financiamento</a>
+                    </div>
+
+                    <!-- Texto mais informações de Terreno Próprio-->
+                    <div class="modal-text modal-text-tereno-proprio">
+                        <label class="modal-conteiner-close center-center" for="modal">
+                            <span class="modal-close"></span>
+                        </label>
+                        <p>TEste Nesta modalidade, existem quatro faixas de renda contempladas. São elas:</p>
+
+                        <p class="font-bold">Famílias com renda de até R$ 1.800,00:</p>
+                        <p>Faixa 1 - A Caixa oferece várias vantagens para a sua família. Conte com um financiamento de até 120 meses, com prestações mensais que variam de R$ 80,00 a R$ 270,00, conforme a renda bruta familiar. A garantia para o financiamento é o imóvel que você vai adquirir. Assim, fica muito mais fácil realizar o sonho da casa própria.</p>
+
+                        <p class="font-bold">Famílias com renda de até R$ 2.600,00:</p>
+                        <p>Faixa 1,5: Você pode adquirir um imóvel novo com taxas de juros de apenas 5% ao ano e até 30 anos para pagar e subsídios de até 47,5 mil reais.</p>
+
+                        <p>Nas FAIXAS 2 e 3 você tem até 30 anos para pagar e pode comprar um imóvel novo ou na planta, comprar terreno e construir sua casa do jeito que sempre quis ou ainda construir em um terreno que já é seu.</p>
+
+                        <p>Famílias com renda de até R$ 3,600,00:</p>
+                        <p>FAIXA 2: Se sua família tem renda bruta de até R$ 3.600,00, você se encaixa nesta faixa do Programa Minha Casa Minha Vida e pode ter subsídios de até R$ 29.000,00.</p>
+
+                        <p>Famílias com renda de até R$ 6.500,00:</p>
+                        <p>FAIXA 3: Para famílias com renda bruta de até R$ 6.500,00​​, a faixa 3 do Programa Minha Casa Minha Vida oferece taxas de juros diferenciadas em relação ao mercado para você conquistar uma casa própria.</p>
+
+
+
+
+                        <p>Nesta modalidade, existem quatro faixas de renda contempladas. São elas:</p>
+
+                        <p class="font-bold">Famílias com renda de até R$ 1.800,00:</p>
+                        <p>Faixa 1 - A Caixa oferece várias vantagens para a sua família. Conte com um financiamento de até 120 meses, com prestações mensais que variam de R$ 80,00 a R$ 270,00, conforme a renda bruta familiar. A garantia para o financiamento é o imóvel que você vai adquirir. Assim, fica muito mais fácil realizar o sonho da casa própria.</p>
+
+                        <p class="font-bold">Famílias com renda de até R$ 2.600,00:</p>
+                        <p>Faixa 1,5: Você pode adquirir um imóvel novo com taxas de juros de apenas 5% ao ano e até 30 anos para pagar e subsídios de até 47,5 mil reais.</p>
+
+                        <p>Nas FAIXAS 2 e 3 você tem até 30 anos para pagar e pode comprar um imóvel novo ou na planta, comprar terreno e construir sua casa do jeito que sempre quis ou ainda construir em um terreno que já é seu.</p>
+
+                        <p>Famílias com renda de até R$ 3,600,00:</p>
+                        <p>FAIXA 2: Se sua família tem renda bruta de até R$ 3.600,00, você se encaixa nesta faixa do Programa Minha Casa Minha Vida e pode ter subsídios de até R$ 29.000,00.</p>
+
+                        <p>Famílias com renda de até R$ 6.500,00:</p>
+                        <p>FAIXA 3: Para famílias com renda bruta de até R$ 6.500,00​​, a faixa 3 do Programa Minha Casa Minha Vida oferece taxas de juros diferenciadas em relação ao mercado para você conquistar uma casa própria.</p>
+
+                        <a href="http://www8.caixa.gov.br/siopiinternet-web/simulaOperacaoInternet.do?method=inicializarCasoUso" class="default-btn-simulacao" target="_blank">Simule seu financiamento</a>
+                    </div>
+
+                    <!-- Texto mais informações de SBPE-->
+                    <div class="modal-text modal-text-sbpe">
+                        <label class="modal-conteiner-close center-center" for="modal">
+                            <span class="modal-close"></span>
+                        </label>
+                        <p>TEste Nesta modalidade, existem quatro faixas de renda contempladas. São elas:</p>
+
+                        <p class="font-bold">Famílias com renda de até R$ 1.800,00:</p>
+                        <p>Faixa 1 - A Caixa oferece várias vantagens para a sua família. Conte com um financiamento de até 120 meses, com prestações mensais que variam de R$ 80,00 a R$ 270,00, conforme a renda bruta familiar. A garantia para o financiamento é o imóvel que você vai adquirir. Assim, fica muito mais fácil realizar o sonho da casa própria.</p>
+
+                        <p class="font-bold">Famílias com renda de até R$ 2.600,00:</p>
+                        <p>Faixa 1,5: Você pode adquirir um imóvel novo com taxas de juros de apenas 5% ao ano e até 30 anos para pagar e subsídios de até 47,5 mil reais.</p>
+
+                        <p>Nas FAIXAS 2 e 3 você tem até 30 anos para pagar e pode comprar um imóvel novo ou na planta, comprar terreno e construir sua casa do jeito que sempre quis ou ainda construir em um terreno que já é seu.</p>
+
+                        <p>Famílias com renda de até R$ 3,600,00:</p>
+                        <p>FAIXA 2: Se sua família tem renda bruta de até R$ 3.600,00, você se encaixa nesta faixa do Programa Minha Casa Minha Vida e pode ter subsídios de até R$ 29.000,00.</p>
+
+                        <p>Famílias com renda de até R$ 6.500,00:</p>
+                        <p>FAIXA 3: Para famílias com renda bruta de até R$ 6.500,00​​, a faixa 3 do Programa Minha Casa Minha Vida oferece taxas de juros diferenciadas em relação ao mercado para você conquistar uma casa própria.</p>
+
+
+
+
+                        <p>Nesta modalidade, existem quatro faixas de renda contempladas. São elas:</p>
+
+                        <p class="font-bold">Famílias com renda de até R$ 1.800,00:</p>
+                        <p>Faixa 1 - A Caixa oferece várias vantagens para a sua família. Conte com um financiamento de até 120 meses, com prestações mensais que variam de R$ 80,00 a R$ 270,00, conforme a renda bruta familiar. A garantia para o financiamento é o imóvel que você vai adquirir. Assim, fica muito mais fácil realizar o sonho da casa própria.</p>
+
+                        <p class="font-bold">Famílias com renda de até R$ 2.600,00:</p>
+                        <p>Faixa 1,5: Você pode adquirir um imóvel novo com taxas de juros de apenas 5% ao ano e até 30 anos para pagar e subsídios de até 47,5 mil reais.</p>
+
+                        <p>Nas FAIXAS 2 e 3 você tem até 30 anos para pagar e pode comprar um imóvel novo ou na planta, comprar terreno e construir sua casa do jeito que sempre quis ou ainda construir em um terreno que já é seu.</p>
+
+                        <p>Famílias com renda de até R$ 3,600,00:</p>
+                        <p>FAIXA 2: Se sua família tem renda bruta de até R$ 3.600,00, você se encaixa nesta faixa do Programa Minha Casa Minha Vida e pode ter subsídios de até R$ 29.000,00.</p>
+
+                        <p>Famílias com renda de até R$ 6.500,00:</p>
+                        <p>FAIXA 3: Para famílias com renda bruta de até R$ 6.500,00​​, a faixa 3 do Programa Minha Casa Minha Vida oferece taxas de juros diferenciadas em relação ao mercado para você conquistar uma casa própria.</p>
+
+                        <a href="http://www8.caixa.gov.br/siopiinternet-web/simulaOperacaoInternet.do?method=inicializarCasoUso" class="default-btn-simulacao" target="_blank">Simule seu financiamento</a>
+
+                    </div>
+
+            <!-- EMPRÉSTIMO PESSOAL -->
+            <div class="modal-text modal-text-emp-pessoal">
+                <label class="modal-conteiner-close center-center" for="modal">
+                    <span class="modal-close"></span>
+                </label>
+                <p>TEste Nesta modalidade, existem quatro faixas de renda contempladas. São elas:</p>
+
+                <span class="default-btn-simulacao">Fale Conosco</span>
+
+            </div>
+
+            <!-- SEGURO DE VIDA -->
+            <div class="modal-text modal-text-seguro">
+                <label class="modal-conteiner-close center-center" for="modal">
+                    <span class="modal-close"></span>
+                </label>
+                <p>TEste Nesta modalidade, existem quatro faixas de renda contempladas. São elas:</p>
+
+                <span class="default-btn-simulacao">Fale Conosco</span>
+
+            </div>
+
+            <!-- SEGURO DE VIDA -->
+            <div class="modal-text modal-text-abert-conta">
+                <label class="modal-conteiner-close center-center" for="modal">
+                    <span class="modal-close"></span>
+                </label>
+                <p>TEste Nesta modalidade, existem quatro faixas de renda contempladas. São elas:</p>
+
+                <span class="default-btn-simulacao">Fale Conosco</span>
+
+            </div>
+        </div>
+    </section>
     <!-- Rodapé -->
     <footer class="center-center">
         <p>©2017 Vizzar Consultoria ® - Todos os direitos reservados. </p>

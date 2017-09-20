@@ -35,17 +35,15 @@
 .servico-quem-somos-header{
   width: 90px;
   height: 90px;
-  //border-radius: 100px;
   border-radius: 90px;
   border: solid #ffffff 1px;
   background-color: #ffffff;
   transition: all .5s;
   margin: 0 auto;
-  //transform: rotate(45deg);
-  &:hover{
+  /*&:hover{
     cursor: pointer;
     transform: rotate(360deg);
-  }
+  }*/
 }
 .servico-quem-somos-img{
   background-image: url("../imagens/icon-logo.png");
@@ -260,7 +258,7 @@
 /**** Espaço branco *****/
 .servico-espaco-sessao{
   width: 100%;
-  height: 25vh;
+  height: 15vh;
   background-color: #eeeeee;
 }
 
@@ -301,7 +299,7 @@
   height: 100%;
   margin-right: 5px;
   transition: all .2s;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .servico-contato-card-conteudo{
   padding: 20px;

@@ -38,10 +38,72 @@ $(document).ready(function () {
         }else{
             $(".conteiner-mobile").css("left","-100%");
             $(".mobile-bg-menu").css("display","none");
+            $("#submenu-mobile").prop("checked", false);
+            $(".submenu").css("left", "-100%");
         }
     });
 
 
+    var modalInfo = $("#modal");
+    modalInfo.click(function () {
+        var classe = $(this).attr('id');
+        console.log(classe);
+        if($(this).is(":checked")){
+            $(".modal-conteiner").fadeIn(300);
+            $(".modal-conteiner").css("display", "flex");
+            pauseSlideFinan = true;
+        }else{
+            pauseSlideFinan = false;
+            $(".modal-conteiner").css("display", "none");
+            $(".modal-conteiner").fadeOut(300);
+        }
+    });
 
+    //Texto Mais informações de Minha Casa Minha Vida
+    $("#mais-info-mcmv").click(function () {
+        $(".modal-text").css("display","none");
+        $(".modal-text-mcmv").css("display","block");
+    });
 
+    //Texto mais informações de reforma
+    $("#mais-info-reforma").click(function () {
+        $(".modal-text").css("display","none");
+        $(".modal-text-reforma").css("display","block");
+    });
+
+    //Texto mais informações de Terreno e Construção
+    $("#mais-info-terreno-construcao").click(function () {
+        $(".modal-text").css("display","none");
+        $(".modal-text-tereno-construcao").css("display","block");
+    });
+
+    //Texto mais informações de Terreno Próprio
+    $("#mais-info-terreno-proprio").click(function () {
+        $(".modal-text").css("display","none");
+        $(".modal-text-tereno-proprio").css("display","block");
+    });
+
+    //Texto mais informações de SBPE
+    $("#mais-info-sbpe").click(function () {
+        $(".modal-text").css("display","none");
+        $(".modal-text-sbpe").css("display","block");
+    });
+
+    //Texto mais informações de Empréstimo Pessoal
+    $("#mais-info-emp-pessoal").click(function () {
+        $(".modal-text").css("display","none");
+        $(".modal-text-emp-pessoal").css("display","block");
+    });
+
+    //Texto mais informações de Seguro de Vida
+    $("#mais-info-seguro").click(function () {
+        $(".modal-text").css("display","none");
+        $(".modal-text-seguro").css("display","block");
+    });
+
+    //Texto mais informações de Abertura de Conta
+    $("#mais-info-abert-conta").click(function () {
+        $(".modal-text").css("display","none");
+        $(".modal-text-abert-conta").css("display","block");
+    });
 });

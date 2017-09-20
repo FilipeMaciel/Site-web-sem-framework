@@ -10,7 +10,7 @@
   text-decoration: none;
   -moz-text-decoration-style: solid; }
 
-a, a:hover, a:visited, a:focus, a:active {
+a, a:hover, a:visited, a:focus, a:active, a:link {
   text-decoration: none;
   color: inherit;
   -moz-text-decoration-color: #002d54; }
@@ -20,7 +20,7 @@ body {
   -ms-overflow-x: hidden; }
 
 main {
-  overflow: hidden; }
+  overflow-x: hidden; }
 
 main:last-child {
   margin-bottom: 0 !important; }
@@ -78,6 +78,24 @@ body::-webkit-scrollbar-thumb {
   font-weight: 500;
   transition: all .1s; }
   .default-botao-card:hover {
+    background-color: transparent;
+    cursor: pointer; }
+
+.default-btn-simulacao {
+  color: #ffffff !important;
+  padding: 8px 30px;
+  position: relative;
+  bottom: 0;
+  background-color: #f66201;
+  border: 1.5px solid #f66201;
+  font-weight: 500;
+  transition: all .1s;
+  text-decoration: none; }
+  .default-btn-simulacao:link {
+    color: #ffffff; }
+  .default-btn-simulacao:visited {
+    text-decoration: none; }
+  .default-btn-simulacao:hover {
     background-color: transparent;
     cursor: pointer; }
 
@@ -145,7 +163,7 @@ body::-webkit-scrollbar-thumb {
   animation: arrow-down 3s linear infinite, tempo 3s infinite;
   -moz-animation: arrow-down 3s linear infinite, tempo 3s infinite;
   -webkit-animation: arrow-down 3s linear infinite, tempo 3s infinite;
-  z-index: 999;
+  z-index: 99;
   position: absolute;
   left: 50%;
   top: 50%;
