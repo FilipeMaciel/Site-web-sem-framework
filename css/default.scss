@@ -402,3 +402,40 @@ body::-webkit-scrollbar-thumb {
   opacity: 1;
   transform: translate3d(0,0,0);
 }
+.default-input-conteiner{
+  width: 95%;
+}
+.default-input{
+  padding: 7px 0;
+  width: 100%;
+  margin: 10px 0;
+  font-size: 1.4em;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+  &:focus{
+    -webkit-box-shadow: -1px 1px 0px 0px rgba(168, 168, 168, 0.75);
+    -moz-box-shadow: -1px 1px 0px 0px rgba(168, 168, 168, 0.75);
+    box-shadow: -1px 1px 0px 0px rgba(168, 168, 168, 0.75);
+    outline: none;
+   // border-bottom: 2px solid #a4a4a4;
+  }
+}
+.default-input-medio{
+  @extend .default-input;
+  width: 49.5%;
+}
+.default-row-2-input{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  input:first-child{
+    margin-right: 1%;
+  }
+  label{
+    width: 100%;
+  }
+}

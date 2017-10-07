@@ -106,4 +106,6 @@ $(document).ready(function () {
         $(".modal-text").css("display","none");
         $(".modal-text-abert-conta").css("display","block");
     });
+
+
 });

@@ -23,7 +23,7 @@
   background-color: #002d54;
   opacity: .95;
   z-index: 100;
-  padding: 40px 40px 40px 40px !important;
+  padding: 40px 40px 40px 40px;
   overflow-y: scroll;
   max-height: 70vh; }
   .modal-text p {
@@ -36,6 +36,8 @@
     padding: 5px;
     font-size: 1.3em;
     font-weight: 300; }
+  .modal-text p:first-child {
+    margin-top: 50px; }
   .modal-text p:nth-last-of-type(1) {
     margin-bottom: 30px; }
 
@@ -104,5 +106,15 @@
 .modal-text::-webkit-scrollbar-thumb {
   background: #e16835;
   -moz-appearance: inherit !important; }
+
+.modal-consignado {
+  display: none;
+  width: 100%;
+  height: 90vh;
+  position: fixed;
+  top: 10vh;
+  left: 0;
+  background-color: #002d54;
+  z-index: 100; }
 
 /*# sourceMappingURL=modal.css.map */
